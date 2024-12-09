@@ -1,0 +1,16 @@
+{
+  "header": {
+    "today": "วันนี้"
+  },
+  "validation": {
+    "noEmptyNoSpace": "ฟิลด์นี้ต้องไม่ว่างเปล่าหรือมีเฉพาะช่องว่าง",
+    "maxLensField": "เกินความยาวสูงสุด",
+    "rangeError": "ค่าต้องอยู่ระหว่าง {min} และ {max}",
+    "noEmptyPortOnly": "หมายเลขพอร์ตไม่ถูกต้อง (0-65535)",
+    "invalidIpFormat": "รูปแบบ IP แอดเดรสไม่ถูกต้อง",
+    "invalidEmailFormat": "รูปแบบอีเมลไม่ถูกต้อง",
+    "invalidDomainFormat": "รูปแบบชื่อโดเมนไม่ถูกต้อง",
+    "passwordNotMatch": "รหัสผ่านไม่ตรงกัน",
+    "invalidUriFormat": "รูปแบบ URI ไม่ถูกต้อง"
+  }
+}

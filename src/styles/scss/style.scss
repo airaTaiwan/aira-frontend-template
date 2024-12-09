@@ -1,0 +1,11 @@
+// CoreUI Styles
+@import '~@coreui/scss/_functions';
+
+// Default variable overrides
+@import 'variables';
+
+// Include all of CoreUI
+@import '~@coreui/scss/coreui';
+
+// Custom Coreui Components
+@import 'button';

@@ -1,0 +1,29 @@
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url('/images/bg.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.splitpanes__splitter {
+  --uno: relative h-2 bg-hex-1E1E1E;
+}
+
+.splitpanes__splitter:before {
+  content: '';
+  --uno: w-8 h-px -mt-0.5 absolute top-1/2 left-1/2 bg-white/20 rounded-2.5 -translate-x-1/2;
+}
+
+.splitpanes__splitter:after {
+  content: '';
+  --uno: w-8 h-px mt-0.25 absolute top-1/2 left-1/2 bg-white/20 rounded-2.5 -translate-x-1/2;
+}

@@ -1,0 +1,23 @@
+.btn {
+  color: #ffffff;
+  border-width: 0;
+
+  &:hover {
+    color: #ffffff;
+  }
+
+  &:active {
+    color: #ffffff !important;
+  }
+
+  &:disabled,
+  &.disabled,
+  fieldset:disabled & {
+    color: #ffffff;
+    pointer-events: none;
+    background-image: if($enable-gradients, none, null);
+    border-color: var(--#{$prefix}btn-disabled-border-color);
+    opacity: 0.4;
+    @include box-shadow(none);
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "header": {
+    "today": "Hoy"
+  },
+  "validation": {
+    "noEmptyNoSpace": "Este campo no puede estar vacío o contener solo espacios",
+    "maxLensField": "Excede la longitud máxima",
+    "rangeError": "El valor debe estar entre {min} y {max}",
+    "noEmptyPortOnly": "Número de puerto no válido (0-65535)",
+    "invalidIpFormat": "Formato de dirección IP no válido",
+    "invalidEmailFormat": "Formato de correo electrónico no válido",
+    "invalidDomainFormat": "Formato de nombre de dominio no válido",
+    "passwordNotMatch": "Las contraseñas no coinciden",
+    "invalidUriFormat": "Formato de URI no válido"
+  }
+}

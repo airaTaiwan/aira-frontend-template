@@ -1,0 +1,16 @@
+{
+  "header": {
+    "today": "今日は"
+  },
+  "validation": {
+    "noEmptyNoSpace": "このフィールドは空白またはスペースのみであってはいけません",
+    "maxLensField": "最大長を超えています",
+    "rangeError": "値は{min}から{max}の間である必要があります",
+    "noEmptyPortOnly": "無効なポート番号です（0-65535）",
+    "invalidIpFormat": "無効なIPアドレス形式です",
+    "invalidEmailFormat": "無効なメール形式です",
+    "invalidDomainFormat": "無効なドメイン名形式です",
+    "passwordNotMatch": "パスワードが一致しません",
+    "invalidUriFormat": "無効な URI 形式です"
+  }
+}
