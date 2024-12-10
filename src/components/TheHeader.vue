@@ -33,9 +33,7 @@ const currentTime = computed(() => format(now.value, 'HH:mm:ss'))
           {{ currentTime }}
         </p>
       </div>
-      <RouterLink v-slot="{ navigate }" to="/manage/setting/analysis/list" custom>
-        <div i-cil-cog h-8 w-8 cursor-pointer transition duration-150 hover:brightness-50 @click="navigate" />
-      </RouterLink>
+      <div i-cil-cog h-8 w-8 cursor-pointer transition duration-150 hover:brightness-50 />
     </div>
   </div>
 </template>
