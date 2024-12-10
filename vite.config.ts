@@ -33,7 +33,7 @@ export default defineConfig({
         'vue-router/auto': ['useLink'],
       }],
       dts: true,
-      dirs: ['src/composables', 'src/stores', 'src/utils', 'src/apis', 'src/constants'],
+      dirs: ['src/composables', 'src/stores', 'src/utils', 'src/api', 'src/constants'],
       vueTemplate: true,
     }),
 
