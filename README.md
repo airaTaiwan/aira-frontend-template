@@ -68,6 +68,16 @@
 
 [使用這個模板創建倉庫.](https://github.com/airaTaiwan/aira-frontend-template/generate).
 
+### 克隆到本地
+
+請使用這種方式來建立專案，這樣可以保留更乾淨的 git 歷史紀錄
+
+```bash
+npx degit airaTaiwan/aira-frontend-template airaApp
+cd airaApp
+pnpm i # 如果你沒裝過 pnpm, 可以先運行: npm install -g pnpm
+```
+
 ### 授權
 
 此模板改至 [vitesse-lite](https://github.com/antfu-collective/vitesse-lite) 模板
