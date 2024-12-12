@@ -17,7 +17,7 @@ const currentTime = computed(() => format(now.value, 'HH:mm:ss'))
   >
     <RouterLink v-slot="{ navigate }" to="/" custom>
       <button bg-transparent type="button" @click="navigate">
-        <CImage fluid :src="isDark ? '/dark-logo.svg' : '/logo.svg'" width="96" />
+        <CImage fluid :src="isDark ? '/dark-logo.svg' : '/logo.svg'" />
       </button>
     </RouterLink>
     <div h-full flex="~ items-center" gap-x-4>

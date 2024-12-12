@@ -1,6 +1,6 @@
 <template>
   <div
-    h-full w-full bg-cover color-base
+    h-full w-full color-base
   >
     <TheHeader />
     <RouterView />

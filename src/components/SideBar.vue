@@ -20,12 +20,13 @@ function toggleSideBar() {
 <template>
   <aside
     id="sideBar"
-    class="flex flex-col overflow-hidden transition-all duration-300"
+    flex="~ col" of-hidden
+    transition="all duration-300"
     :class="[placement.toString(), sideBarVisible ? 'open' : '']"
     :style="{ width: `${width}rem` }"
   >
     <CSidebarToggler
-      class="transition-transform duration-300"
+      class="min-h-12.5 transition-transform duration-300"
       :class="[!sideBarVisible && 'rotate-180', placement === 'left' ? 'ml-auto' : 'mr-auto']"
       @click="toggleSideBar"
     />
