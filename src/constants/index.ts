@@ -1,7 +1,5 @@
 import packageJson from '../../package.json'
 
-export const WhitePageRegexp = /manage|report|login/
-
 export const stepProgressParams = Object.freeze({
   param_cardStyle: 'height: 35rem;',
   activeColor: '#6baee3',
