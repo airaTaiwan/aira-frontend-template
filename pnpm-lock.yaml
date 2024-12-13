@@ -100,8 +100,8 @@ importers:
         specifier: ^0.3.1
         version: 0.3.1(unocss@0.65.1(postcss@8.4.49)(rollup@4.28.1)(vite@6.0.3(@types/node@22.10.1)(jiti@2.4.0)(sass@1.82.0)(tsx@4.19.2)(yaml@2.6.1))(vue@3.5.13(typescript@5.7.2)))
       unplugin-auto-import:
-        specifier: ^0.18.6
-        version: 0.18.6(@vueuse/core@12.0.0(typescript@5.7.2))(rollup@4.28.1)
+        specifier: ^0.19.0
+        version: 0.19.0(@vueuse/core@12.0.0(typescript@5.7.2))(rollup@4.28.1)
       unplugin-vue-components:
         specifier: ^0.27.5
         version: 0.27.5(@babel/parser@7.26.3)(rollup@4.28.1)(vue@3.5.13(typescript@5.7.2))
@@ -2931,8 +2931,8 @@ packages:
   undici-types@6.20.0:
     resolution: {integrity: sha512-Ny6QZ2Nju20vw1SRHe3d9jVu6gJ+4e3+MMpqu7pqE5HT6WsTSlce++GQmK5UXS8mzV8DSYHrQH+Xrf2jVcuKNg==}
 
-  unimport@3.14.1:
-    resolution: {integrity: sha512-5QERqIMwhLoTYFZN++HvjxF/uR6CJrtEFfS1MAWnerhjo3uXsXJalxMDecTt7zQL0u+USNG9UllPyapxiNZGPA==}
+  unimport@3.14.5:
+    resolution: {integrity: sha512-tn890SwFFZxqaJSKQPPd+yygfKSATbM8BZWW1aCR2TJBTs1SDrmLamBueaFtYsGjHtQaRgqEbQflOjN2iW12gA==}
 
   unist-util-is@6.0.0:
     resolution: {integrity: sha512-2qCTHimwdxLfz+YzdGfkqNlH0tLi9xjTnHddPmJwtIG9MGsdbutfTc4P+haPD7l7Cjxf/WZj+we5qfVPvvxfYw==}
@@ -2963,8 +2963,8 @@ packages:
       vite:
         optional: true
 
-  unplugin-auto-import@0.18.6:
-    resolution: {integrity: sha512-LMFzX5DtkTj/3wZuyG5bgKBoJ7WSgzqSGJ8ppDRdlvPh45mx6t6w3OcbExQi53n3xF5MYkNGPNR/HYOL95KL2A==}
+  unplugin-auto-import@0.19.0:
+    resolution: {integrity: sha512-W97gTDEWu/L1EcKCXY5Ni8bsMW1E9kv12wYQv3mYpd7zcFctXYlLKsqeva6sbCQbzS8t9AG/XdU5/WkEJKPlFw==}
     engines: {node: '>=14'}
     peerDependencies:
       '@nuxt/kit': ^3.2.2
@@ -3002,6 +3002,10 @@ packages:
 
   unplugin@2.0.0-beta.1:
     resolution: {integrity: sha512-2qzQo5LN2DmUZXkWDHvGKLF5BP0WN+KthD6aPnPJ8plRBIjv4lh5O07eYcSxgO2znNw9s4MNhEO1sB+JDllDbQ==}
+    engines: {node: '>=18.12.0'}
+
+  unplugin@2.1.0:
+    resolution: {integrity: sha512-us4j03/499KhbGP8BU7Hrzrgseo+KdfJYWcbcajCOqsAyb8Gk0Yn2kiUIcZISYCb1JFaZfIuG3b42HmguVOKCQ==}
     engines: {node: '>=18.12.0'}
 
   update-browserslist-db@1.1.1:
@@ -4069,7 +4073,7 @@ snapshots:
       chokidar: 3.6.0
       colorette: 2.0.20
       consola: 3.2.3
-      magic-string: 0.30.14
+      magic-string: 0.30.15
       pathe: 1.1.2
       perfect-debounce: 1.0.0
       tinyglobby: 0.2.10
@@ -4197,7 +4201,7 @@ snapshots:
   '@unocss/rule-utils@0.65.1':
     dependencies:
       '@unocss/core': 0.65.1
-      magic-string: 0.30.14
+      magic-string: 0.30.15
 
   '@unocss/transformer-attributify-jsx@0.65.1':
     dependencies:
@@ -4225,7 +4229,7 @@ snapshots:
       '@unocss/core': 0.65.1
       '@unocss/inspector': 0.65.1(vue@3.5.13(typescript@5.7.2))
       chokidar: 3.6.0
-      magic-string: 0.30.14
+      magic-string: 0.30.15
       tinyglobby: 0.2.10
       vite: 6.0.3(@types/node@22.10.1)(jiti@2.4.0)(sass@1.82.0)(tsx@4.19.2)(yaml@2.6.1)
     transitivePeerDependencies:
@@ -4339,7 +4343,7 @@ snapshots:
       '@vue/compiler-ssr': 3.5.13
       '@vue/shared': 3.5.13
       estree-walker: 2.0.2
-      magic-string: 0.30.14
+      magic-string: 0.30.15
       postcss: 8.4.49
       source-map-js: 1.2.1
 
@@ -5453,7 +5457,7 @@ snapshots:
 
   magic-string-ast@0.6.2:
     dependencies:
-      magic-string: 0.30.14
+      magic-string: 0.30.15
 
   magic-string@0.30.14:
     dependencies:
@@ -5462,7 +5466,6 @@ snapshots:
   magic-string@0.30.15:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.5.0
-    optional: true
 
   markdown-table@3.0.4: {}
 
@@ -6319,21 +6322,21 @@ snapshots:
   undici-types@6.20.0:
     optional: true
 
-  unimport@3.14.1(rollup@4.28.1):
+  unimport@3.14.5(rollup@4.28.1):
     dependencies:
       '@rollup/pluginutils': 5.1.3(rollup@4.28.1)
       acorn: 8.14.0
       escape-string-regexp: 5.0.0
       estree-walker: 3.0.3
+      fast-glob: 3.3.2
       local-pkg: 0.5.1
-      magic-string: 0.30.14
+      magic-string: 0.30.15
       mlly: 1.7.3
       pathe: 1.1.2
       picomatch: 4.0.2
       pkg-types: 1.2.1
       scule: 1.3.0
       strip-literal: 2.1.1
-      tinyglobby: 0.2.10
       unplugin: 1.16.0
     transitivePeerDependencies:
       - rollup
@@ -6389,16 +6392,15 @@ snapshots:
       - supports-color
       - vue
 
-  unplugin-auto-import@0.18.6(@vueuse/core@12.0.0(typescript@5.7.2))(rollup@4.28.1):
+  unplugin-auto-import@0.19.0(@vueuse/core@12.0.0(typescript@5.7.2))(rollup@4.28.1):
     dependencies:
       '@antfu/utils': 0.7.10
       '@rollup/pluginutils': 5.1.3(rollup@4.28.1)
-      fast-glob: 3.3.2
       local-pkg: 0.5.1
-      magic-string: 0.30.14
-      minimatch: 9.0.5
-      unimport: 3.14.1(rollup@4.28.1)
-      unplugin: 1.16.0
+      magic-string: 0.30.15
+      picomatch: 4.0.2
+      unimport: 3.14.5(rollup@4.28.1)
+      unplugin: 2.1.0
     optionalDependencies:
       '@vueuse/core': 12.0.0(typescript@5.7.2)
     transitivePeerDependencies:
@@ -6451,6 +6453,11 @@ snapshots:
       webpack-virtual-modules: 0.6.2
 
   unplugin@2.0.0-beta.1:
+    dependencies:
+      acorn: 8.14.0
+      webpack-virtual-modules: 0.6.2
+
+  unplugin@2.1.0:
     dependencies:
       acorn: 8.14.0
       webpack-virtual-modules: 0.6.2
