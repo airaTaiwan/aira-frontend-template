@@ -50,10 +50,10 @@ importers:
         version: 5.9.0(vue@3.5.13(typescript@5.7.2))
       '@iconify-json/carbon':
         specifier: ^1.2.4
-        version: 1.2.4
+        version: 1.2.5
       '@iconify-json/cil':
         specifier: ^1.2.1
-        version: 1.2.1
+        version: 1.2.2
       '@intlify/unplugin-vue-i18n':
         specifier: ^6.0.0
         version: 6.0.1(@vue/compiler-dom@3.5.13)(eslint@9.17.0(jiti@2.4.1))(rollup@4.28.1)(typescript@5.7.2)(vue-i18n@10.0.5(vue@3.5.13(typescript@5.7.2)))(vue@3.5.13(typescript@5.7.2))
@@ -612,11 +612,11 @@ packages:
     resolution: {integrity: sha512-c7hNEllBlenFTHBky65mhq8WD2kbN9Q6gk0bTk8lSBvc554jpXSkST1iePudpt7+A/AQvuHs9EMqjHDXMY1lrA==}
     engines: {node: '>=18.18'}
 
-  '@iconify-json/carbon@1.2.4':
-    resolution: {integrity: sha512-DhW2jjMVGwV0DLHc0cmDYohdtGxMra8UuwgjHrryPy+rQX4gXhJwCBBVP2h2UG/92AoRCTn7zUJve4WvY5MLYg==}
+  '@iconify-json/carbon@1.2.5':
+    resolution: {integrity: sha512-aI3TEzOrUDGhs74zIT3ym/ZQBUEziyu8JifntX2Hb4siVzsP5sQ/QEfVdmcCUj37kQUYT3TYBSeAw2vTfCJx9w==}
 
-  '@iconify-json/cil@1.2.1':
-    resolution: {integrity: sha512-sTauvkrqunhA42rjrQpFjRfWzbcJSq2GWrZIMJmyjEYWiHiHczUvH4Q0e1LsEpB3CVRPqr1oU3Wi3pAeUSt3Mg==}
+  '@iconify-json/cil@1.2.2':
+    resolution: {integrity: sha512-DiIDcsmGQhzFuxprBI5KTUm4+k3NS9qVqihpsJe5PBAbRXwEfn6fUfcHcdAcFPgU3hIQ6zgQ4cuebXPuiWxbOg==}
 
   '@iconify/types@2.0.0':
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
@@ -3230,11 +3230,11 @@ snapshots:
 
   '@humanwhocodes/retry@0.4.1': {}
 
-  '@iconify-json/carbon@1.2.4':
+  '@iconify-json/carbon@1.2.5':
     dependencies:
       '@iconify/types': 2.0.0
 
-  '@iconify-json/cil@1.2.1':
+  '@iconify-json/cil@1.2.2':
     dependencies:
       '@iconify/types': 2.0.0
 
