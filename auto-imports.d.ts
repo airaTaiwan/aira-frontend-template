@@ -7,7 +7,6 @@
 export {}
 declare global {
   const EffectScope: typeof import('vue')['EffectScope']
-  const WhitePageRegexp: typeof import('./src/constants/index')['WhitePageRegexp']
   const asyncComputed: typeof import('@vueuse/core')['asyncComputed']
   const autoResetRef: typeof import('@vueuse/core')['autoResetRef']
   const checkConfirmPassword: typeof import('./src/utils/validation')['checkConfirmPassword']
@@ -56,6 +55,7 @@ declare global {
   const isReactive: typeof import('vue')['isReactive']
   const isReadonly: typeof import('vue')['isReadonly']
   const isRef: typeof import('vue')['isRef']
+  const localFormat: typeof import('./src/utils/time')['localFormat']
   const makeDestructurable: typeof import('@vueuse/core')['makeDestructurable']
   const markRaw: typeof import('vue')['markRaw']
   const nextTick: typeof import('vue')['nextTick']
@@ -276,6 +276,7 @@ declare global {
   const useTransition: typeof import('@vueuse/core')['useTransition']
   const useUrlSearchParams: typeof import('@vueuse/core')['useUrlSearchParams']
   const useUserMedia: typeof import('@vueuse/core')['useUserMedia']
+  const useUserStore: typeof import('./src/stores/user')['useUserStore']
   const useVModel: typeof import('@vueuse/core')['useVModel']
   const useVModels: typeof import('@vueuse/core')['useVModels']
   const useVibrate: typeof import('@vueuse/core')['useVibrate']
@@ -318,7 +319,6 @@ declare module 'vue' {
   interface GlobalComponents {}
   interface ComponentCustomProperties {
     readonly EffectScope: UnwrapRef<typeof import('vue')['EffectScope']>
-    readonly WhitePageRegexp: UnwrapRef<typeof import('./src/constants/index')['WhitePageRegexp']>
     readonly asyncComputed: UnwrapRef<typeof import('@vueuse/core')['asyncComputed']>
     readonly autoResetRef: UnwrapRef<typeof import('@vueuse/core')['autoResetRef']>
     readonly checkConfirmPassword: UnwrapRef<typeof import('./src/utils/validation')['checkConfirmPassword']>
@@ -367,6 +367,7 @@ declare module 'vue' {
     readonly isReactive: UnwrapRef<typeof import('vue')['isReactive']>
     readonly isReadonly: UnwrapRef<typeof import('vue')['isReadonly']>
     readonly isRef: UnwrapRef<typeof import('vue')['isRef']>
+    readonly localFormat: UnwrapRef<typeof import('./src/utils/time')['localFormat']>
     readonly makeDestructurable: UnwrapRef<typeof import('@vueuse/core')['makeDestructurable']>
     readonly markRaw: UnwrapRef<typeof import('vue')['markRaw']>
     readonly nextTick: UnwrapRef<typeof import('vue')['nextTick']>
@@ -587,6 +588,7 @@ declare module 'vue' {
     readonly useTransition: UnwrapRef<typeof import('@vueuse/core')['useTransition']>
     readonly useUrlSearchParams: UnwrapRef<typeof import('@vueuse/core')['useUrlSearchParams']>
     readonly useUserMedia: UnwrapRef<typeof import('@vueuse/core')['useUserMedia']>
+    readonly useUserStore: UnwrapRef<typeof import('./src/stores/user')['useUserStore']>
     readonly useVModel: UnwrapRef<typeof import('@vueuse/core')['useVModel']>
     readonly useVModels: UnwrapRef<typeof import('@vueuse/core')['useVModels']>
     readonly useVibrate: UnwrapRef<typeof import('@vueuse/core')['useVibrate']>

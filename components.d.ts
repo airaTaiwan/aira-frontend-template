@@ -8,15 +8,15 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     AsyncButton: typeof import('./src/components/atomic/AsyncButton.vue')['default']
-    CheckBoxGroup: typeof import('./src/components/atomic/CheckBoxGroup.vue')['default']
+    CheckBoxGroup: typeof import('./src/components/CheckBoxGroup.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     SearchInput: typeof import('./src/components/atomic/SearchInput.vue')['default']
     SideBar: typeof import('./src/components/SideBar.vue')['default']
-    StepProgress: typeof import('./src/components/atomic/StepProgress.vue')['default']
+    StepProgress: typeof import('./src/components/StepProgress.vue')['default']
     SwitchButton: typeof import('./src/components/atomic/SwitchButton.vue')['default']
     TheHeader: typeof import('./src/components/TheHeader.vue')['default']
     TogglePassword: typeof import('./src/components/atomic/TogglePassword.vue')['default']
-    VerifyInput: typeof import('./src/components/atomic/VerifyInput.vue')['default']
+    VerifyInput: typeof import('./src/components/VerifyInput.vue')['default']
   }
 }

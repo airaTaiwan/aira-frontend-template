@@ -1,10 +1,9 @@
 import kyStandard, { type Options } from 'ky'
 
-const { DEV, VITE_API_BASE_URL, VITE_API_PREFIX } = import.meta.env
+const { VITE_API_BASE_URL, VITE_API_PREFIX } = import.meta.env
 
 export interface APIResponse {
   message: string
-
 }
 
 export interface APIResponseLength {
@@ -25,20 +24,8 @@ function createTypedKyInstance(options?: Options) {
   }
 }
 
-function getUrl() {
-  if (DEV)
-    return `${VITE_API_BASE_URL}/${VITE_API_PREFIX}`
-
-  const { protocol, host } = globalThis.location
-  return `${protocol}//${host}/${VITE_API_PREFIX}`
-}
-
-export const apiClient = kyStandard.create({
-  prefixUrl: `${VITE_API_BASE_URL}/${VITE_API_PREFIX}`,
-})
-
 const ky = createTypedKyInstance({
-  prefixUrl: getUrl(),
+  prefixUrl: `${VITE_API_BASE_URL}/${VITE_API_PREFIX}`,
   timeout: 10000,
 })
 

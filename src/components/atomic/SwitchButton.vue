@@ -26,23 +26,23 @@ function borderRaiusStyle(idx: number) {
 
 <template>
   <div
-    flex="~ items-center"
     border="~ white"
-
-    bg-ctrl-secondary rounded-full text-base
-    style="min-width: 12rem"
+    grid rounded-full bg-ctrl-secondary text-base
+    :style="`grid-template-columns: repeat(${options.length}, 1fr)`"
   >
     <div
       v-for="(item, idx) in options"
       :key="item.value"
-      text="center base hover:text-white" hover:bg-ctrl-primary relative h-full cursor-pointer py-2 leading-4
+      text="center base hover:text-white"
+      relative h-full min-w-25 cursor-pointer overflow-hidden whitespace-nowrap hover:bg-ctrl-primary py-2 leading-4
       :class="[item.value === value ? '!bg-ctrl-primary !text-white' : '']"
       :style="{ 'border-radius': borderRaiusStyle(idx) }"
-      style="width: 100%"
       @click="value = item.value"
     >
       <template v-if="item.text">
-        {{ item.text }}
+        <p overflow-hidden text-ellipsis whitespace-nowrap px-2>
+          {{ item.text }}
+        </p>
       </template>
       <template v-if="item.icon">
         <div :class="item.icon" mx-a h-4 w-4 />
