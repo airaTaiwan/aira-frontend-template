@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'font-awesome';
+  src: url('./font-awesome.woff2') format('woff2');
+}
+
+.fa {
+  font-family: 'font-awesome' !important;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fa.fa-check:before {
+  content: '\e001';
+}

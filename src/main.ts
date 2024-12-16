@@ -10,8 +10,8 @@ import installPlugins from './plugin'
 import './styles/scss/style.scss'
 import './styles/main.css'
 import '@unocss/reset/tailwind-compat.css'
-import 'vue-step-progress/dist/main.css'
 import 'uno.css'
+import 'vue-step-progress/dist/main.css'
 
 const app = createApp(App)
 const router = createRouter({
