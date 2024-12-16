@@ -11,6 +11,7 @@ const { currentStep } = defineProps<{
 
 <template>
   <StepProgress
+    font-roboto
     :steps
     :current-step
     icon-class="text-4xl fa fa-check"

@@ -56,6 +56,7 @@ export default defineConfig({
     presetWebFonts({
       fonts: {
         sans: 'Noto Sans TC',
+        roboto: 'Roboto',
       },
     }),
     presetScrollbar(),
