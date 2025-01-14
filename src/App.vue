@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import VScaleScreen from 'v-scale-screen'
+
 const route = useRoute()
 
 watchEffect(() => {
@@ -14,7 +16,9 @@ watchEffect(() => {
 </script>
 
 <template>
-  <main relative h-full w-full font-sans>
-    <RouterView />
-  </main>
+  <VScaleScreen width="1920" height="1080">
+    <main relative h-full w-full font-sans>
+      <RouterView />
+    </main>
+  </VScaleScreen>
 </template>
