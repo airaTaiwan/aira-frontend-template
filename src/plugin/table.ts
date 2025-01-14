@@ -24,7 +24,7 @@ function lazyVxeTable(app: App) {
   app.use(VxeToolbar)
 }
 
-export default (app: App) => {
+export function install(app: App) {
   VxeUI.setTheme('light')
   VxeUI.setI18n('zh-TW', zhTW)
   VxeUI.setLanguage('zh-TW')

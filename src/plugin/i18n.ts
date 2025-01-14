@@ -53,7 +53,7 @@ export async function loadLanguageAsync(lang: string): Promise<Locale> {
   return setI18nLanguage(lang)
 }
 
-export default (app: App) => {
+export function install(app: App) {
   app.use(i18n)
-  loadLanguageAsync(cacheLanguage.value)
+  loadLanguageAsync('en')
 }
