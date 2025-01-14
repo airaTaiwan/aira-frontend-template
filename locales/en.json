@@ -1,6 +1,38 @@
 {
+  "common": {
+    "time": "Time",
+    "total": "Total",
+    "add": "Add",
+    "delete": "Delete",
+    "cancel": "Cancel",
+    "previous": "Previous",
+    "next": "Next",
+    "back": "Back",
+    "done": "Done",
+    "group": "Group",
+    "remark": "Remark",
+    "photo": "Photo",
+    "upload": "Upload",
+    "licensed": "Licensed",
+    "selected": "Selected",
+    "all": "All",
+    "unit": "Unit"
+  },
+  "search": {
+    "name": "Search by name"
+  },
   "header": {
     "today": "Today"
+  },
+  "table": {
+    "operate": "Operate"
+  },
+  "modal": {
+    "delete": {
+      "title": "Delete Confirmation",
+      "confirm": "Are you sure you want to delete?",
+      "prompt": "Message Prompt"
+    }
   },
   "validation": {
     "noEmptyNoSpace": "This field cannot be empty or contain only spaces",

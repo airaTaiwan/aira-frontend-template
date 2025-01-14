@@ -1,6 +1,38 @@
 {
+  "common": {
+    "time": "Temps",
+    "total": "Total",
+    "add": "Ajouter",
+    "delete": "Supprimer",
+    "cancel": "Annuler",
+    "previous": "Précédent",
+    "next": "Suivant",
+    "back": "Retour",
+    "done": "Terminé",
+    "group": "Groupe",
+    "remark": "Remarque",
+    "photo": "Photo",
+    "upload": "Télécharger",
+    "licensed": "Sous Licence",
+    "selected": "Sélectionné",
+    "all": "Tout",
+    "unit": "Unité"
+  },
+  "search": {
+    "name": "名前検索"
+  },
   "header": {
     "today": "Aujourd'hui"
+  },
+  "table": {
+    "operate": "Opération"
+  },
+  "modal": {
+    "delete": {
+      "title": "Confirmation de suppression",
+      "confirm": "Êtes-vous sûr de vouloir supprimer ?",
+      "prompt": "Message"
+    }
   },
   "validation": {
     "noEmptyNoSpace": "Ce champ ne peut pas être vide ou ne contenir que des espaces",

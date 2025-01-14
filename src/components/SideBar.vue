@@ -21,16 +21,17 @@ function toggleSideBar() {
   <aside
     id="sideBar"
     flex="~ col" of-hidden
+    bg-hex-3c4b64
     transition="all duration-300"
     :class="[placement.toString(), sideBarVisible ? 'open' : '']"
     :style="{ width: `${width}rem` }"
   >
     <CSidebarToggler
-      class="min-h-12.5 transition-transform duration-300"
+      class="transition-transform duration-300"
       :class="[!sideBarVisible && 'rotate-180', placement === 'left' ? 'ml-auto' : 'mr-auto']"
       @click="toggleSideBar"
     />
-    <Transition name="fade" mode="out-in" appear>
+    <Transition name="slide-fade" mode="out-in" appear>
       <slot v-if="sideBarVisible" />
     </Transition>
     <slot v-if="!sideBarVisible" name="disappear" />
@@ -58,16 +59,16 @@ function toggleSideBar() {
   --cui-sidebar-toggler-icon: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHZpZXdCb3g9IjAgMCAxOCAxOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTkgMTdMMTcgOU0xNyA5TDkgMC45OTk5OTlNMTcgOUwxIDkiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+Cjwvc3ZnPgo=');
 }
 
-.fade-enter-active {
+.slide-fade-enter-active {
   transition: opacity 0.4s;
 }
 
-.fade-leave-active {
+.slide-fade-leave-active {
   transition: opacity 0.05s;
 }
 
-.fade-enter-from,
-.fade-leave-to {
+.slide-fade-enter-from,
+.slide-fade-leave-to {
   opacity: 0;
 }
 </style>

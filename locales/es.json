@@ -1,6 +1,38 @@
 {
+  "common": {
+    "time": "Time",
+    "total": "Total",
+    "add": "Agregar",
+    "delete": "Eliminar",
+    "cancel": "Cancelar",
+    "previous": "Anterior",
+    "next": "Siguiente",
+    "back": "Volver",
+    "done": "Hecho",
+    "group": "Grupo",
+    "remark": "Observación",
+    "photo": "Foto",
+    "upload": "Carga",
+    "licensed": "Licenciado",
+    "selected": "Seleccionado",
+    "all": "Todo",
+    "unit": "Unidad"
+  },
+  "search": {
+    "name": "Buscar por nombre"
+  },
   "header": {
     "today": "Hoy"
+  },
+  "table": {
+    "operate": "Operación"
+  },
+  "modal": {
+    "delete": {
+      "title": "Confirmación de eliminación",
+      "confirm": "¿Está seguro de que desea eliminar?",
+      "prompt": "Mensaje"
+    }
   },
   "validation": {
     "noEmptyNoSpace": "Este campo no puede estar vacío o contener solo espacios",

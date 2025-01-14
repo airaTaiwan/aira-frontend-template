@@ -1,6 +1,38 @@
 {
+  "common": {
+    "time": "時間",
+    "total": "合計",
+    "add": "追加",
+    "delete": "削除",
+    "cancel": "キャンセル",
+    "previous": "前へ",
+    "next": "次へ",
+    "back": "戻る",
+    "done": "完了",
+    "group": "グループ",
+    "remark": "備考",
+    "photo": "写真",
+    "upload": "アップロード",
+    "licensed": "ライセンス済",
+    "selected": "選択済み",
+    "all": "全て",
+    "unit": "単位"
+  },
+  "search": {
+    "name": "ค้นหาชื่อ"
+  },
   "header": {
     "today": "今日は"
+  },
+  "table": {
+    "operate": "操作する"
+  },
+  "modal": {
+    "delete": {
+      "title": "削除確認",
+      "confirm": "削除してもよろしいですか？",
+      "prompt": "メッセージ"
+    }
   },
   "validation": {
     "noEmptyNoSpace": "このフィールドは空白またはスペースのみであってはいけません",

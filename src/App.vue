@@ -1,6 +1,15 @@
 <script setup lang="ts">
-onMounted(() => {
-  toggleDark(true)
+const route = useRoute()
+
+watchEffect(() => {
+  if (WhitePageRegexp.test(route.path)) {
+    toggleDark(false)
+    document.documentElement.setAttribute('data-coreui-theme', 'light')
+  }
+  else {
+    toggleDark(true)
+    document.documentElement.setAttribute('data-coreui-theme', 'dark')
+  }
 })
 </script>
 

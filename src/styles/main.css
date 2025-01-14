@@ -8,14 +8,7 @@ body,
   padding: 0;
 }
 
-body {
-  background-image: url('/images/bg.svg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-}
-
+/* Splitpanes */
 .splitpanes__splitter {
   --uno: relative h-2 bg-hex-1E1E1E;
 }
@@ -28,4 +21,20 @@ body {
 .splitpanes__splitter:after {
   content: '';
   --uno: w-8 h-px mt-0.25 absolute top-1/2 left-1/2 bg-white/20 rounded-2.5 -translate-x-1/2;
+}
+
+/* Table */
+.table-layout {
+  th,
+  td {
+    --uno: align-top text-lg font-400;
+  }
+
+  th {
+    --uno: pb-2;
+  }
+
+  td {
+    --uno: pb-4;
+  }
 }

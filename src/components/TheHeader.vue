@@ -17,7 +17,7 @@ const currentTime = computed(() => format(now.value, 'HH:mm:ss'))
   >
     <RouterLink v-slot="{ navigate }" to="/" custom>
       <button bg-transparent type="button" @click="navigate">
-        <CImage fluid :src="isDark ? '/dark-logo.svg' : '/logo.svg'" />
+        <CImage fluid width="96" :src="isDark ? '/dark-logo.svg' : '/logo.svg'" />
       </button>
     </RouterLink>
     <div h-full flex="~ items-center" gap-x-4>
@@ -33,7 +33,9 @@ const currentTime = computed(() => format(now.value, 'HH:mm:ss'))
           {{ currentTime }}
         </p>
       </div>
-      <div i-cil-cog h-8 w-8 cursor-pointer transition duration-150 hover:brightness-50 />
+      <RouterLink v-slot="{ navigate }" to="/manage/config/list" custom>
+        <div i-cil-cog h-8 w-8 cursor-pointer transition duration-150 hover:brightness-50 @click="navigate" />
+      </RouterLink>
     </div>
   </div>
 </template>
