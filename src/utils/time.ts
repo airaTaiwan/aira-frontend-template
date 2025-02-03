@@ -15,6 +15,6 @@ const locales = {
 
 export type SupportedLocale = keyof typeof locales
 
-export function localFormat(date: Date, formatStr: string) {
+export function localFormat(date: Date | string, formatStr: string) {
   return format(date, formatStr, { locale: locales[cacheLanguage.value as SupportedLocale] })
 }
