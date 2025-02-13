@@ -3,7 +3,7 @@ import { CFormCheck, CListGroup, CListGroupItem } from '@coreui/vue-pro'
 import { computed } from 'vue'
 
 interface CheckBoxGroupOptions {
-  id: string
+  value: string
   label?: string
   children?: CheckBoxGroupOptions[]
 }
@@ -17,24 +17,24 @@ const selected = defineModel<string[]>({ required: false, default: [] })
 const childrenIdsCache = new Map<string, string[]>()
 
 function getAllChildrenIds(item: CheckBoxGroupOptions): string[] {
-  const cached = childrenIdsCache.get(item.id)
+  const cached = childrenIdsCache.get(item.value)
   if (cached)
     return cached
 
   let ids: string[] = []
   if (item.children) {
     item.children.forEach((child) => {
-      ids = [...ids, child.id, ...getAllChildrenIds(child)]
+      ids = [...ids, child.value, ...getAllChildrenIds(child)]
     })
   }
 
-  childrenIdsCache.set(item.id, ids)
+  childrenIdsCache.set(item.value, ids)
   return ids
 }
 
 const getChildrenState = computed(() => (item: CheckBoxGroupOptions): boolean => {
   if (!item.children?.length)
-    return selected.value.includes(item.id)
+    return selected.value.includes(item.value)
 
   const childrenIds = getAllChildrenIds(item)
   return childrenIds.length > 0 && childrenIds.every(id => selected.value.includes(id))
@@ -49,7 +49,7 @@ function onSelectedChange(id: string, children: CheckBoxGroupOptions[] = []) {
   }
 
   const childrenIds = children.reduce((acc, child) => {
-    return [...acc, child.id, ...getAllChildrenIds(child)]
+    return [...acc, child.value, ...getAllChildrenIds(child)]
   }, [] as string[])
 
   const allSelected = childrenIds.every(id => selected.value.includes(id))
@@ -61,12 +61,12 @@ function onSelectedChange(id: string, children: CheckBoxGroupOptions[] = []) {
 
 <template>
   <CListGroup>
-    <CListGroupItem v-for="item in options" :key="item.id">
+    <CListGroupItem v-for="item in options" :key="item.value">
       <CFormCheck
-        :id="item.id"
-        :label="item.label ?? item.id"
+        :id="item.value"
+        :label="item.label ?? item.value"
         :model-value="getChildrenState(item)"
-        @change="onSelectedChange(item.id, item.children)"
+        @change="onSelectedChange(item.value, item.children)"
       />
       <div v-if="item.children?.length" class="ms-4">
         <CheckBoxGroup
