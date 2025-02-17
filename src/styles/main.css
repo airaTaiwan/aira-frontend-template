@@ -1,29 +1,27 @@
 @import './font-awesome/font-awesome.css';
+@import './vxe-table/vxe-table.css';
 
-html,
-body,
+/* fallback to vh if dvh is not supported */
 #app {
-  height: 100%;
-  margin: 0;
-  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
 }
 
-/* Splitpanes */
-.splitpanes__splitter {
-  --uno: relative h-2 bg-hex-1E1E1E;
+html.dark {
+  --cui-body-color: rgba(255, 255, 255, 0.8);
 }
 
-.splitpanes__splitter:before {
-  content: '';
-  --uno: w-8 h-px -mt-0.5 absolute top-1/2 left-1/2 bg-white/20 rounded-2.5 -translate-x-1/2;
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.15s ease-in;
 }
 
-.splitpanes__splitter:after {
-  content: '';
-  --uno: w-8 h-px mt-0.25 absolute top-1/2 left-1/2 bg-white/20 rounded-2.5 -translate-x-1/2;
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
 }
 
-/* Table */
 .table-layout {
   th,
   td {
@@ -37,4 +35,35 @@ body,
   td {
     --uno: pb-4;
   }
+}
+
+/* Overrides Floating Vue */
+.v-popper--theme-dropdown .v-popper__inner,
+.v-popper--theme-tooltip .v-popper__inner {
+  --at-apply: 'bg-white:75 dark:bg-neutral-900:75 backdrop-blur-8 color-base font-sans rounded border border-#aaa3 shadow dark:shadow-2xl';
+  box-shadow: 0 6px 30px #0000001a;
+}
+
+.v-popper--theme-tooltip .v-popper__arrow-inner,
+.v-popper--theme-dropdown .v-popper__arrow-inner {
+  visibility: visible;
+  --at-apply: 'border-white dark:border-neutral-900';
+}
+
+.v-popper--theme-tooltip .v-popper__arrow-outer,
+.v-popper--theme-dropdown .v-popper__arrow-outer {
+  --at-apply: border-#aaa3;
+}
+
+.v-popper--theme-tooltip.v-popper--shown,
+.v-popper--theme-tooltip.v-popper--shown * {
+  transition: none !important;
+}
+
+.table-layout th {
+  --uno: pb-2;
+}
+
+.table-layout td {
+  --uno: pb-4;
 }

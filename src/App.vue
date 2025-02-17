@@ -17,7 +17,7 @@ watchEffect(() => {
 
 <template>
   <VScaleScreen width="1920" height="1080">
-    <main relative h-full w-full font-sans>
+    <main relative h-full w-full bg-white text-white font-sans>
       <RouterView />
     </main>
   </VScaleScreen>

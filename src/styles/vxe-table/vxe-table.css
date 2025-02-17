@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'vxe-custom-icon';
+  src: url('./vxe-table.woff2') format('woff2');
+}
+
+[class*='vxe-custom-icon'] {
+  font-family: 'vxe-custom-icon' !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.1em;
+  line-height: 1;
+  vertical-align: middle;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.vxe-custom-icon-inbox:before {
+  content: '\e001';
+}
+
+.vxe-custom-icon-description:before {
+  content: '\e002';
+}
+
+.vxe-custom-icon-settings:before {
+  content: '\e003';
+}
+
+.vxe-custom-icon-copy:before {
+  content: '\e004';
+}
+
+.vxe-custom-icon-trash:before {
+  content: '\e005';
+}
+
+.vxe-custom-icon-search:before {
+  content: '\e006';
+}
