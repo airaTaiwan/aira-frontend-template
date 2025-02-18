@@ -1,8 +1,9 @@
 import type { App } from 'vue'
 import type { Locale } from 'vue-i18n'
 import { createI18n } from 'vue-i18n'
+import packageJson from '../../package.json'
 
-export const cacheLanguage = useStorage('language', 'zh')
+export const cacheLanguage = useStorage(`${packageJson.name}-language`, 'zh')
 
 export const languageOptionMap = new Map<string, string>()
   .set('es', 'Español')
