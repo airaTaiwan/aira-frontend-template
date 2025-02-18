@@ -1,7 +1,8 @@
 <script setup lang="ts">
+import type { NavigationFailure, RouteLocationNormalizedLoaded } from 'vue-router'
 import type { RouteNamedMap } from 'vue-router/auto-routes'
 import { CNavGroup, CNavItem, CSidebarNav } from '@coreui/vue-pro'
-import { type NavigationFailure, type RouteLocationNormalizedLoaded, RouterLink } from 'vue-router'
+import { RouterLink } from 'vue-router'
 
 export interface Navitem {
   id?: 'dashboard' | 'manage' | 'report'
@@ -18,7 +19,7 @@ const manageNavs = computed<Navitem[]>(() => [])
 
 const reportNavs = computed<Navitem[]>(() => [])
 
-const navs = computed(() => [...manageNavs.value, ...reportNavs.value])
+const navs = computed<Navitem[]>(() => [...manageNavs.value, ...reportNavs.value])
 
 function normalizePath(path: string) {
   return decodeURI(path)

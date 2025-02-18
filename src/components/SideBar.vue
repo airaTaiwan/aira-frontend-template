@@ -1,9 +1,14 @@
 <script setup lang="ts">
 import { CSidebarToggler } from '@coreui/vue-pro'
 
-const { maxWidth = 16, placement = 'left' } = defineProps<{
+const {
+  maxWidth = 16,
+  placement = 'left',
+  isShowToggler = true,
+} = defineProps<{
   maxWidth?: number
   placement?: 'left' | 'right'
+  isShowToggler?: boolean
 }>()
 
 defineEmits<{
@@ -26,7 +31,9 @@ function toggleSideBar() {
     :class="[placement.toString(), sideBarVisible ? 'open' : '']"
     :style="{ width: `${width}rem` }"
   >
+    <slot name="header" />
     <CSidebarToggler
+      v-if="isShowToggler"
       class="transition-transform duration-300"
       :class="[!sideBarVisible && 'rotate-180', placement === 'left' ? 'ml-auto' : 'mr-auto']"
       @click="toggleSideBar"
