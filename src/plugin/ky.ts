@@ -1,4 +1,5 @@
-import kyStandard, { type Options } from 'ky'
+import type { Options } from 'ky'
+import kyStandard from 'ky'
 
 const { VITE_API_BASE_URL, VITE_API_PREFIX } = import.meta.env
 

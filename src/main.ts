@@ -1,4 +1,5 @@
 import type { UserModule } from './types'
+import { PiniaColada } from '@pinia/colada'
 import { createPinia } from 'pinia'
 import { setupLayouts } from 'virtual:generated-layouts'
 import { createApp } from 'vue'
@@ -24,5 +25,8 @@ Object.values(import.meta.glob<{ install: UserModule }>('./plugin/*.ts', { eager
     i.install?.(app)
   })
 
-app.use(createPinia()).use(router)
+app
+  .use(createPinia())
+  .use(PiniaColada)
+  .use(router)
 app.mount('#app')

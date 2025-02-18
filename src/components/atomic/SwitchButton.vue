@@ -27,14 +27,14 @@ function borderRaiusStyle(idx: number) {
 <template>
   <div
     border="~ white"
-    grid rounded-full bg-ctrl-secondary text-base
+    bg-ctrl-secondary grid rounded-full text-base
     :style="`grid-template-columns: repeat(${options.length}, 1fr)`"
   >
     <div
       v-for="(item, idx) in options"
       :key="item.value"
       text="center base hover:text-white"
-      relative h-full min-w-25 cursor-pointer overflow-hidden whitespace-nowrap hover:bg-ctrl-primary py-2 leading-4
+      hover:bg-ctrl-primary relative h-full min-w-25 cursor-pointer overflow-hidden whitespace-nowrap py-2 leading-4
       :class="[item.value === value ? '!bg-ctrl-primary !text-white' : '']"
       :style="{ 'border-radius': borderRaiusStyle(idx) }"
       @click="value = item.value"

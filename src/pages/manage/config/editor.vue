@@ -3,8 +3,8 @@ import type { ComponentExposed } from 'vue-component-type-helpers'
 import type DeleteModal from '~/components/modal/DeleteModal.vue'
 
 import { CButton, CCol, CRow } from '@coreui/vue-pro'
-import Step1Form from '~/manage/config/Step1Form.vue'
-import Done from '~/manage/Done.vue'
+import Step1Form from '~/modules/manage/config/Step1Form.vue'
+import Done from '~/modules/manage/Done.vue'
 
 // import type { Config } from '~/types/config'
 interface Config {}
@@ -82,8 +82,11 @@ onMounted(() => {
         <CRow :sm="{ cols: 1, gutterY: 3 }">
           <CCol>
             <StepProgress
-              :steps="['測試', t('common.done')]"
-              :current-step="currentStep"
+              :steps="[
+                '測試',
+                t('common.done'),
+              ]"
+              :current-step
             />
           </CCol>
 

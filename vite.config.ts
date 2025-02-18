@@ -33,7 +33,14 @@ export default defineConfig({
         'vue-router/auto': ['useLink'],
       }],
       dts: true,
-      dirs: ['src/composables', 'src/stores', 'src/utils', 'src/api', 'src/constants'],
+      dirs: [
+        'src/composables',
+        'src/stores',
+        'src/queries',
+        'src/utils',
+        'src/api',
+        'src/constants',
+      ],
       vueTemplate: true,
     }),
 
@@ -59,6 +66,6 @@ export default defineConfig({
     target: 'esnext',
   },
   define: {
-    __BUILD_DATE__: JSON.stringify(new Date().toISOString().slice(2, 10).replace(/-/g, '')),
+    __BUILD_DATE__: JSON.stringify(new Date().toISOString().slice(0, 10).replace(/-/g, '')),
   },
 })

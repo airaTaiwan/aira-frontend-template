@@ -8,7 +8,7 @@ defineOptions({
   <div h="[calc(100%-4rem)]" w-full p-4 class="grid-container">
     <!-- Main -->
     <div class="main">
-      I am Main
+      {{ frontEndVersion }}
     </div>
   </div>
 </template>
