@@ -16,7 +16,7 @@ const { t } = useI18n()
 // const { mutate: createConfig } = useCreateConfig()
 // const { mutate: updateConfig, selectedConfig } = useUpdateConfig()
 
-const editData = ref<Config | null>(toRaw(ref({})))
+const editData = ref<Config | null>(null)
 const { cloned: _requestData, sync } = useCloned(editData, { manual: true })
 
 const modalRef = useTemplateRef<ComponentExposed<typeof DeleteModal>>('modalRef')
