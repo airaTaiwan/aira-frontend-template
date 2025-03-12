@@ -37,6 +37,13 @@ async function handleClick() {
     isLoading.value = false
   }
 }
+
+/**
+ * Prop description
+ *
+ * @tag Tag
+ */
+defineModel<string>('data')
 </script>
 
 <template>

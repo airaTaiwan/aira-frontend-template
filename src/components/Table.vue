@@ -1,4 +1,4 @@
-<script setup lang="ts" generic="T extends { uuid: string }">
+<script setup lang="ts" generic="T = { uuid: string }">
 import type {
   VxeGridProps,
   VxeGridPropTypes,

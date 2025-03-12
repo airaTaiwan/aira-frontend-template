@@ -24,6 +24,15 @@
   "header": {
     "today": "Aujourd'hui"
   },
+  "time": {
+    "year": "Année",
+    "month": "Mois",
+    "week": "Semaine",
+    "day": "Jour",
+    "hour": "Heure",
+    "minute": "Minute",
+    "second": "Seconde"
+  },
   "table": {
     "operate": "Opération"
   },

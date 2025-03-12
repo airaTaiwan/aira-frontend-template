@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build && npm run build:arch",
-    "build:arch": "npx vite-node scripts/arch-dist.ts",
+    "build:arch": "esno scripts/arch-dist.ts",
     "upload:internal": "for REMOTE in '51';  do scp -r dist/* $REMOTE:/opt/aira/airaApp/www/; done",
     "deploy": "pnpm build && pnpm upload",
     "deploy:internal": "pnpm build && pnpm upload:internal",
@@ -52,6 +52,7 @@
     "bumpp": "^10.0.3",
     "eslint": "^9.20.1",
     "eslint-plugin-format": "^1.0.1",
+    "esno": "^4.8.0",
     "lint-staged": "^15.4.3",
     "pnpm": "^10.4.1",
     "sass": "^1.85.0",
