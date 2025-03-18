@@ -19,7 +19,7 @@
     "up": "taze major -I"
   },
   "dependencies": {
-    "@pinia/colada": "^0.13.8",
+    "@pinia/colada": "^0.14.0",
     "@vuepic/vue-datepicker": "^11.0.1",
     "@vueuse/core": "^13.0.0",
     "@vueuse/integrations": "^13.0.0",
