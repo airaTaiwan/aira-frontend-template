@@ -13,6 +13,7 @@ import './styles/main.css'
 import '@unocss/reset/tailwind-compat.css'
 import 'uno.css'
 import 'vue-step-progress/dist/main.css'
+import '@vuepic/vue-datepicker/dist/main.css'
 
 const app = createApp(App)
 const router = createRouter({
