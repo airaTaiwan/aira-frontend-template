@@ -13,7 +13,7 @@ importers:
     dependencies:
       '@pinia/colada':
         specifier: ^0.14.1
-        version: 0.14.1(pinia@3.0.1(typescript@5.8.2)(vue@3.5.13(typescript@5.8.2)))
+        version: 0.14.2(pinia@3.0.1(typescript@5.8.2)(vue@3.5.13(typescript@5.8.2)))
       '@vueform/multiselect':
         specifier: ^2.6.11
         version: 2.6.11
@@ -867,8 +867,8 @@ packages:
     resolution: {integrity: sha512-dfUnCxiN9H4ap84DvD2ubjw+3vUNpstxa0TneY/Paat8a3R4uQZDLSvWjmznAY/DoahqTHl9V46HF/Zs3F29pg==}
     engines: {node: '>= 10.0.0'}
 
-  '@pinia/colada@0.14.1':
-    resolution: {integrity: sha512-uiMHpLb/s/2lse+BmzosqV779FKyEp4O8nwcMOxrLTfsH9IqE1h4tZh2M7OaCjAjpWWrVIGBDI3hz2doi8W/0A==}
+  '@pinia/colada@0.14.2':
+    resolution: {integrity: sha512-nixr1cqkk5RHrafXfJPk7J/F1srCFZTvhrdNfUEx3/N2lRamcYlayniYDwqlRPOw8PHmsRKyRAGgwDiV76sGJA==}
     peerDependencies:
       pinia: ^2.2.6 || ^3.0.0
 
@@ -4048,7 +4048,7 @@ snapshots:
       '@parcel/watcher-win32-x64': 2.5.1
     optional: true
 
-  '@pinia/colada@0.14.1(pinia@3.0.1(typescript@5.8.2)(vue@3.5.13(typescript@5.8.2)))':
+  '@pinia/colada@0.14.2(pinia@3.0.1(typescript@5.8.2)(vue@3.5.13(typescript@5.8.2)))':
     dependencies:
       '@vue/devtools-api': 7.7.2
       pinia: 3.0.1(typescript@5.8.2)(vue@3.5.13(typescript@5.8.2))
