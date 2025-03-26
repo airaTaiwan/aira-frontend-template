@@ -1,6 +1,7 @@
 import path from 'node:path'
 import VueI18n from '@intlify/unplugin-vue-i18n/vite'
 import Vue from '@vitejs/plugin-vue'
+import VueComplexTypes from '@vue.ts/complex-types/vite'
 import UnoCSS from 'unocss/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
@@ -18,6 +19,7 @@ export default defineConfig({
     },
   },
   plugins: [
+    VueComplexTypes(),
     Vue(),
 
     // https://github.com/posva/unplugin-vue-router

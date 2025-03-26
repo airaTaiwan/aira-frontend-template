@@ -19,7 +19,6 @@ watchEffect(() => {
   <VScaleScreen width="1920" height="1080">
     <main relative h-full w-full bg-white text-white font-sans>
       <RouterView />
-      <AsyncButton />
     </main>
   </VScaleScreen>
 </template>

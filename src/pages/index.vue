@@ -9,6 +9,8 @@ defineOptions({
     <!-- Main -->
     <div class="main">
       {{ frontEndVersion }}
+      <DatePicker />
+      <MultiSelect />
     </div>
   </div>
 </template>

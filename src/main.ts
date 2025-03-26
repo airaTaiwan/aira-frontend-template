@@ -14,6 +14,7 @@ import '@unocss/reset/tailwind-compat.css'
 import 'uno.css'
 import 'vue-step-progress/dist/main.css'
 import '@vuepic/vue-datepicker/dist/main.css'
+import '@vueform/multiselect/themes/default.css'
 
 const app = createApp(App)
 const router = createRouter({
@@ -28,6 +29,6 @@ Object.values(import.meta.glob<{ install: UserModule }>('./plugin/*.ts', { eager
 
 app
   .use(createPinia())
-  .use(PiniaColada)
+  .use(PiniaColada, {})
   .use(router)
 app.mount('#app')

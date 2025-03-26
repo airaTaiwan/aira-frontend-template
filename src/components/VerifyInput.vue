@@ -136,7 +136,16 @@ onMounted(() => {
   <CFormLabel v-if="title" :for="id" class="text-nowrap">
     {{ title }}
   </CFormLabel>
-  <CFormInput :id v-model="text" :type :valid :invalid :disabled :placeholder />
+  <CFormInput
+    v-bind="$attrs"
+    :id="id"
+    v-model="text"
+    :type="type"
+    :valid="valid"
+    :invalid="invalid"
+    :disabled="disabled"
+    :placeholder="placeholder"
+  />
   <CFormFeedback v-if="feedbackVisible" class="order-1" :valid :invalid :tooltip>
     {{ feedbackInvalid }}
   </CFormFeedback>

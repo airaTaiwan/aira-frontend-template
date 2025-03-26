@@ -18,8 +18,11 @@
     "all": "Tout",
     "unit": "Unité"
   },
+  "select": {
+    "noItem": "Aucun élément"
+  },
   "search": {
-    "name": "名前検索"
+    "name": "Rechercher par nom"
   },
   "header": {
     "today": "Aujourd'hui"

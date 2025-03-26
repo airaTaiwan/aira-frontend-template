@@ -18,6 +18,9 @@
     "all": "All",
     "unit": "Unit"
   },
+  "select": {
+    "noItem": "No items"
+  },
   "search": {
     "name": "Search by name"
   },

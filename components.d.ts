@@ -10,7 +10,9 @@ declare module 'vue' {
   export interface GlobalComponents {
     AsyncButton: typeof import('./src/components/atomic/AsyncButton.vue')['default']
     CheckBoxGroup: typeof import('./src/components/CheckBoxGroup.vue')['default']
+    DatePicker: typeof import('./src/components/DatePicker.vue')['default']
     DeleteModal: typeof import('./src/components/modal/DeleteModal.vue')['default']
+    MultiSelect: typeof import('./src/components/MultiSelect.vue')['default']
     Nav: typeof import('./src/components/Nav.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']

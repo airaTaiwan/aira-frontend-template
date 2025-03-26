@@ -18,6 +18,9 @@
     "all": "全部",
     "unit": "單位"
   },
+  "select": {
+    "noItem": "無項目"
+  },
   "search": {
     "name": "搜尋名稱"
   },

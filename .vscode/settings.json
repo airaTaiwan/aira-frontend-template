@@ -48,5 +48,6 @@
   "i18n-ally.localesPaths": [
     "locales"
   ],
-  "commentTranslate.hover.enabled": true
+  "commentTranslate.hover.enabled": true,
+  "typescript.tsdk": "node_modules/typescript/lib"
 }
