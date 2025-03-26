@@ -1,9 +1,9 @@
 import fs from 'node:fs'
 
 import archiver from 'archiver'
-import { name } from '../package.json'
+import { name, version } from '../package.json'
 
-const fileName = `${name}.zip`
+const fileName = `${name}-${version}.zip`
 
 const output = fs.createWriteStream(`./${fileName}`)
 const archive = archiver('zip', {
