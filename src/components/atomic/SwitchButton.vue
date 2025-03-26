@@ -8,7 +8,7 @@ export interface SwitchOptions {
 
 <script setup lang="ts">
 const { options = [] } = defineProps<{
-  options: SwitchOptions[]
+  options?: SwitchOptions[]
 }>()
 
 const value = defineModel({ required: false, default: '' })

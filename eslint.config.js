@@ -6,6 +6,7 @@ export default antfu(
     formatters: true,
     rules: {
       'vue/no-mutating-props': 'off',
+      'style/type-generic-spacing': 'off',
     },
   },
 )
