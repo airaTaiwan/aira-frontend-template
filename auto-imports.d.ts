@@ -15,6 +15,7 @@ declare global {
   const checkEmail: typeof import('./src/utils/validation')['checkEmail']
   const checkIpAddr: typeof import('./src/utils/validation')['checkIpAddr']
   const checkMaxLen: typeof import('./src/utils/validation')['checkMaxLen']
+  const checkNumber: typeof import('./src/utils/validation')['checkNumber']
   const checkPort: typeof import('./src/utils/validation')['checkPort']
   const checkRange: typeof import('./src/utils/validation')['checkRange']
   const checkUri: typeof import('./src/utils/validation')['checkUri']
@@ -337,6 +338,7 @@ declare module 'vue' {
     readonly checkEmail: UnwrapRef<typeof import('./src/utils/validation')['checkEmail']>
     readonly checkIpAddr: UnwrapRef<typeof import('./src/utils/validation')['checkIpAddr']>
     readonly checkMaxLen: UnwrapRef<typeof import('./src/utils/validation')['checkMaxLen']>
+    readonly checkNumber: UnwrapRef<typeof import('./src/utils/validation')['checkNumber']>
     readonly checkPort: UnwrapRef<typeof import('./src/utils/validation')['checkPort']>
     readonly checkRange: UnwrapRef<typeof import('./src/utils/validation')['checkRange']>
     readonly checkUri: UnwrapRef<typeof import('./src/utils/validation')['checkUri']>

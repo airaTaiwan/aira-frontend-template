@@ -20,6 +20,25 @@ export function isNotEmptyValidator(val: string | undefined): string | undefined
 }
 
 /**
+ * 檢查數值是否為數字
+ */
+export function checkNumber(val: number | string | undefined) {
+  if (val === undefined)
+    return undefined
+
+  if (Number.isNaN(Number(val)))
+    return i18n.global.t('validation.invalidNumber')
+
+  if (val.toString() === '')
+    return i18n.global.t('validation.noEmptyNoSpace')
+
+  if (!DIGITS_REGEX.test(val.toString()))
+    return i18n.global.t('validation.invalidNumber')
+
+  return ''
+}
+
+/**
  * 檢查輸入值是否超過最大長度
  *
  * @param val 輸入值
@@ -54,18 +73,11 @@ export function checkRange(val: number | undefined, min: number, max: number) {
  * @param port
  */
 export function checkPort(port: number | undefined) {
-  if (port === undefined)
-    return undefined
+  const checkNumberResult = checkNumber(port)
+  if (checkNumberResult)
+    return checkNumberResult
 
-  if (port.toString() === '')
-    return i18n.global.t('validation.noEmptyNoSpace')
-
-  if (!DIGITS_REGEX.test(port.toString()))
-    return i18n.global.t('validation.noEmptyPortOnly')
-  if (Number(port) < 0 || Number(port) > 65535)
-    return i18n.global.t('validation.noEmptyPortOnly')
-
-  return ''
+  return checkRange(port, 0, 65535) || i18n.global.t('validation.noEmptyPortOnly')
 }
 
 /**

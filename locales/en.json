@@ -55,6 +55,7 @@
     "invalidEmailFormat": "Invalid email format",
     "invalidDomainFormat": "Invalid domain name format",
     "passwordNotMatch": "Passwords do not match",
-    "invalidUriFormat": "Invalid URI format"
+    "invalidUriFormat": "Invalid URI format",
+    "invalidNumber": "Please enter a number"
   }
 }

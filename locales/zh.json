@@ -55,6 +55,7 @@
     "invalidEmailFormat": "無效的電子郵件格式",
     "invalidDomainFormat": "無效的網域名稱格式",
     "passwordNotMatch": "密碼不相符",
-    "invalidUriFormat": "無效的 URI 格式"
+    "invalidUriFormat": "無效的 URI 格式",
+    "invalidNumber": "請輸入數字"
   }
 }

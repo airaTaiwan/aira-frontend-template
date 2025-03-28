@@ -1,8 +1,19 @@
 <script setup lang="ts">
 import { CFormFeedback, CFormInput, CFormLabel } from '@coreui/vue-pro'
 import { watchOnce } from '@vueuse/shared'
+import {
+  checkDomainName,
+  checkEmail,
+  checkIpAddr,
+  checkPort,
+  isNotEmptyValidator,
+} from '~/utils/validation'
 
-type ValidType = '' | 'email' | 'emailEmpty' | 'ip' | 'port' | 'domain' | 'custom' | 'uri'
+type ValidType = '' | 'number' | 'email' | 'emailEmpty' | 'ip' | 'port' | 'domain' | 'custom' | 'uri'
+
+defineOptions({
+  inheritAttrs: false,
+})
 
 const {
   type = 'text',
@@ -65,6 +76,9 @@ const valid = computed(() => {
     case 'uri':
       result = checkUri(String(text.value)) === ''
       break
+    case 'number':
+      result = checkNumber(text.value) === ''
+      break
     default:
       result = isNotEmptyValidator(String(text.value)) === ''
       break
@@ -93,10 +107,14 @@ const invalid = computed(() => {
       return checkDomainName(String(text.value)) !== ''
     case 'uri':
       return checkUri(String(text.value)) !== ''
+    case 'number':
+      return checkNumber(text.value) !== ''
     default:
       return isNotEmptyValidator(String(text.value)) !== ''
   }
 })
+
+const feedbackVisible = computed(() => invalid.value != null && invalid.value)
 
 const feedbackInvalid = computed(() => {
   switch (validType) {
@@ -114,12 +132,12 @@ const feedbackInvalid = computed(() => {
       return checkDomainName(String(text.value))
     case 'uri':
       return checkUri(String(text.value))
+    case 'number':
+      return checkNumber(text.value)
     default:
       return isNotEmptyValidator(String(text.value))
   }
 })
-
-const feedbackVisible = computed(() => invalid.value != null && invalid.value)
 
 watchOnce(text, () => {
   if (!init.value)
@@ -137,14 +155,14 @@ onMounted(() => {
     {{ title }}
   </CFormLabel>
   <CFormInput
-    v-bind="$attrs"
-    :id="id"
+    :id
     v-model="text"
-    :type="type"
-    :valid="valid"
-    :invalid="invalid"
-    :disabled="disabled"
-    :placeholder="placeholder"
+    v-bind="$attrs"
+    :type
+    :valid
+    :invalid
+    :disabled
+    :placeholder
   />
   <CFormFeedback v-if="feedbackVisible" class="order-1" :valid :invalid :tooltip>
     {{ feedbackInvalid }}

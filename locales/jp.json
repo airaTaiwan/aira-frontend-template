@@ -55,6 +55,7 @@
     "invalidEmailFormat": "無効なメール形式です",
     "invalidDomainFormat": "無効なドメイン名形式です",
     "passwordNotMatch": "パスワードが一致しません",
-    "invalidUriFormat": "無効な URI 形式です"
+    "invalidUriFormat": "無効な URI 形式です",
+    "invalidNumber": "数値を入力してください"
   }
 }

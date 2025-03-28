@@ -55,6 +55,7 @@
     "invalidEmailFormat": "รูปแบบอีเมลไม่ถูกต้อง",
     "invalidDomainFormat": "รูปแบบชื่อโดเมนไม่ถูกต้อง",
     "passwordNotMatch": "รหัสผ่านไม่ตรงกัน",
-    "invalidUriFormat": "รูปแบบ URI ไม่ถูกต้อง"
+    "invalidUriFormat": "รูปแบบ URI ไม่ถูกต้อง",
+    "invalidNumber": "กรุณากรอกตัวเลข"
   }
 }
