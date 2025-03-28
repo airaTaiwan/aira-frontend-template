@@ -22,14 +22,8 @@ export default defineConfig({
   ],
   theme: {
     colors: {
-      'primary': '#6CBBFF',
-      'card': '#00000033',
-      'secondary': '#EBECF0',
-      'accent': '#7A7A7A',
-      'counter': '#7FB97A',
-      'modal': '#EBECF0',
-      'head-1': '#1E1E1E',
-      'head-2': '#00000033',
+      primary: '#6CBBFF',
+      accent: '#7A7A7A',
     },
   },
   rules: [

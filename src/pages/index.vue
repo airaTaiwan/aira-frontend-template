@@ -2,6 +2,8 @@
 defineOptions({
   name: 'IndexPage',
 })
+
+const value = ref<string[]>([])
 </script>
 
 <template>
@@ -10,7 +12,14 @@ defineOptions({
     <div class="main">
       {{ frontEndVersion }}
       <DatePicker />
-      <MultiSelect />
+      <MultiSelect
+        v-model="value"
+        :max="10"
+        :options="[{
+          value: '123',
+          label: '123',
+        }]"
+      />
     </div>
   </div>
 </template>

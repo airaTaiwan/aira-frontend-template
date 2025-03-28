@@ -13,8 +13,8 @@ const router = useRouter()
 
 const { t } = useI18n()
 
-// const { mutate: createConfig } = useCreateConfig()
-// const { mutate: updateConfig, selectedConfig } = useUpdateConfig()
+// const { mutateAsync: createConfig } = useCreateConfig()
+// const { mutateAsync: updateConfig, selectedConfig } = useUpdateConfig()
 
 const editData = ref<Config | null>(null)
 const { cloned: _requestData, sync } = useCloned(editData, { manual: true })
