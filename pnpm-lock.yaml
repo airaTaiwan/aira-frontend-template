@@ -52,7 +52,7 @@ importers:
         version: 1.0.2(vue@3.5.13(typescript@5.8.2))
       vxe-pc-ui:
         specifier: ^4.5.5
-        version: 4.5.5(vue@3.5.13(typescript@5.8.2))
+        version: 4.5.7(vue@3.5.13(typescript@5.8.2))
       vxe-table:
         specifier: ^4.12.2
         version: 4.12.2(vue@3.5.13(typescript@5.8.2))
@@ -131,7 +131,7 @@ importers:
         version: 2.12.1
       taze:
         specifier: ^19.0.3
-        version: 19.0.3
+        version: 19.0.4
       typescript:
         specifier: ~5.8.2
         version: 5.8.2
@@ -2728,8 +2728,8 @@ packages:
   package-json-from-dist@1.0.1:
     resolution: {integrity: sha512-UEZIS3/by4OC8vL3P2dTXRETpebLI2NiI5vIrjaD/5UtrkFX/tNbwjTSRAGC/+7CAo2pIcBaRgWmcBBHcsaCIw==}
 
-  package-manager-detector@0.2.9:
-    resolution: {integrity: sha512-+vYvA/Y31l8Zk8dwxHhL3JfTuHPm6tlxM2A3GeQyl7ovYnSp1+mzAxClxaOr0qO1TtPxbQxetI7v5XqKLJZk7Q==}
+  package-manager-detector@0.2.11:
+    resolution: {integrity: sha512-BEnLolu+yuz22S56CU1SUKq3XC3PkwD5wv4ikR4MfGvnRVcmzXR9DwSlW2fEamyTPyXHomBJRzgapeuBvRNzJQ==}
 
   package-manager-detector@1.0.0:
     resolution: {integrity: sha512-7elnH+9zMsRo7aS72w6MeRugTpdRvInmEB4Kmm9BVvPw/SLG8gXUGQ+4wF0Mys0RSWPz0B9nuBbDe8vFeA2sfg==}
@@ -2866,6 +2866,9 @@ packages:
   punycode@2.3.1:
     resolution: {integrity: sha512-vYt7UD1U9Wg6138shLtLOvdAu+8DsC/ilFtEVHcH+wydcSpNE20AfSOduf6MkRFahL5FY7X1oU7nKVZFtfq8Fg==}
     engines: {node: '>=6'}
+
+  quansync@0.2.10:
+    resolution: {integrity: sha512-t41VRkMYbkHyCYmOvx/6URnN80H7k4X0lLdBMGsz+maAwrJQYB1djpV6vHrQIBE0WBSGqhtEHrK9U3DWWH8v7A==}
 
   quansync@0.2.8:
     resolution: {integrity: sha512-4+saucphJMazjt7iOM27mbFCk+D9dd/zmgMDCzRZ8MEoBfYp7lAvoN38et/phRQF6wOPMy/OROBGgoWeSKyluA==}
@@ -3121,8 +3124,8 @@ packages:
   tar-stream@3.1.7:
     resolution: {integrity: sha512-qJj60CXt7IU1Ffyc3NJMjh6EkuCFej46zUqJ4J7pqYlThyd9bO0XBTmcOIhSzZJVWfsLks0+nle/j538YAW9RQ==}
 
-  taze@19.0.3:
-    resolution: {integrity: sha512-XYZDCqdiTnuyTKRKjbO6b27jHw9kdW4C28j8DE+nhnnjq0fS0/vcQikivjrMwcAH4vB1v1WkVbYnvjGelDk9yw==}
+  taze@19.0.4:
+    resolution: {integrity: sha512-bviyNotzqcIWpVBCC4QYVb2yupzKyUDGQi2m/8GERdiPaudVMtgAqaE98+x0cDDaByYRMJCyhQWM04ikUL6+kQ==}
     hasBin: true
 
   text-decoder@1.2.3:
@@ -3403,8 +3406,8 @@ packages:
       typescript:
         optional: true
 
-  vxe-pc-ui@4.5.5:
-    resolution: {integrity: sha512-5CJIfmjR1zARZU86yZ9eRXgaaOG9zojsD04dAZxUmvSXqfUcYgKhXLEe8mNJpEyzEqHQH58DD5fWoe3Sn2umHQ==}
+  vxe-pc-ui@4.5.7:
+    resolution: {integrity: sha512-jmIv+UkIS6e2qJZe11IbeVAqd0nKPJikrrTUzNecL0bNZ5KEloVlTtAX3J5UWeSvesEZ8mhN8Y9XZFp6w3W9Fg==}
 
   vxe-table@4.12.2:
     resolution: {integrity: sha512-X1uifAgEiIozvU3HVC4eDef2jcweEXDYnjIxb+La9DvYrz0fBgsQXvLSv3iCkLjsGCxKgBWgzzbpooXDrlh/Fg==}
@@ -3519,7 +3522,7 @@ snapshots:
 
   '@antfu/install-pkg@1.0.0':
     dependencies:
-      package-manager-detector: 0.2.9
+      package-manager-detector: 0.2.11
       tinyexec: 0.3.2
 
   '@antfu/ni@24.3.0':
@@ -4076,7 +4079,7 @@ snapshots:
 
   '@quansync/fs@0.1.1':
     dependencies:
-      quansync: 0.2.8
+      quansync: 0.2.10
 
   '@rollup/pluginutils@5.1.4(rollup@4.34.7)':
     dependencies:
@@ -6243,7 +6246,9 @@ snapshots:
 
   package-json-from-dist@1.0.1: {}
 
-  package-manager-detector@0.2.9: {}
+  package-manager-detector@0.2.11:
+    dependencies:
+      quansync: 0.2.10
 
   package-manager-detector@1.0.0: {}
 
@@ -6354,6 +6359,8 @@ snapshots:
   process@0.11.10: {}
 
   punycode@2.3.1: {}
+
+  quansync@0.2.10: {}
 
   quansync@0.2.8: {}
 
@@ -6653,7 +6660,7 @@ snapshots:
       fast-fifo: 1.3.2
       streamx: 2.22.0
 
-  taze@19.0.3:
+  taze@19.0.4:
     dependencies:
       '@antfu/ni': 24.3.0
       cac: 6.7.14
@@ -6719,7 +6726,7 @@ snapshots:
       '@quansync/fs': 0.1.1
       defu: 6.1.4
       jiti: 2.4.2
-      quansync: 0.2.8
+      quansync: 0.2.10
 
   unctx@2.4.1:
     dependencies:
@@ -6988,7 +6995,7 @@ snapshots:
     optionalDependencies:
       typescript: 5.8.2
 
-  vxe-pc-ui@4.5.5(vue@3.5.13(typescript@5.8.2)):
+  vxe-pc-ui@4.5.7(vue@3.5.13(typescript@5.8.2)):
     dependencies:
       '@vxe-ui/core': 4.0.38(vue@3.5.13(typescript@5.8.2))
     transitivePeerDependencies:
@@ -6996,7 +7003,7 @@ snapshots:
 
   vxe-table@4.12.2(vue@3.5.13(typescript@5.8.2)):
     dependencies:
-      vxe-pc-ui: 4.5.5(vue@3.5.13(typescript@5.8.2))
+      vxe-pc-ui: 4.5.7(vue@3.5.13(typescript@5.8.2))
     transitivePeerDependencies:
       - vue
 
