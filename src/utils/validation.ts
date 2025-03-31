@@ -77,7 +77,10 @@ export function checkPort(port: number | undefined) {
   if (checkNumberResult)
     return checkNumberResult
 
-  return checkRange(port, 0, 65535) || i18n.global.t('validation.noEmptyPortOnly')
+  if (checkRange(port, 0, 65535) === '')
+    return ''
+
+  return i18n.global.t('validation.noEmptyPortOnly')
 }
 
 /**
