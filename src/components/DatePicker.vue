@@ -27,8 +27,8 @@ defineExpose({
     :locale
     :max-date="props.maxDate ?? new Date()"
     :dark="isDark"
-    :clearable="props.clearable"
-    :enable-time-picker="props.enableTimePicker"
+    :clearable="!!props.clearable"
+    :enable-time-picker="!!props.enableTimePicker"
     :format="props.format ?? format"
     :state="undefined"
     @update:model-value="datePickerRef?.closeMenu()"
