@@ -49,7 +49,10 @@
   "validation": {
     "noEmptyNoSpace": "此欄位不可為空或僅包含空格",
     "maxLensField": "超過最大長度",
-    "rangeError": "數值必須介於 {min} 到 {max} 之間",
+    "rangeError": "數值必須介於 {min} 和 {max} 之間",
+    "rangeErrorMin": "數值必須大於或等於 {min}",
+    "rangeErrorMax": "數值必須小於或等於 {max}",
+    "rangeErrorMinMax": "數值必須介於 {min} 和 {max} 之間",
     "noEmptyPortOnly": "無效的連接埠號碼 (0-65535)",
     "invalidIpFormat": "無效的 IP 位址格式",
     "invalidEmailFormat": "無效的電子郵件格式",

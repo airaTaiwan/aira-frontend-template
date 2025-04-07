@@ -49,7 +49,10 @@
   "validation": {
     "noEmptyNoSpace": "ฟิลด์นี้ต้องไม่ว่างเปล่าหรือมีเฉพาะช่องว่าง",
     "maxLensField": "เกินความยาวสูงสุด",
-    "rangeError": "ค่าต้องอยู่ระหว่าง {min} และ {max}",
+    "rangeError": "ค่าต้องอยู่ระหว่าง {min} ถึง {max}",
+    "rangeErrorMin": "ค่าต้องมากกว่าหรือเท่ากับ {min}",
+    "rangeErrorMax": "ค่าต้องน้อยกว่าหรือเท่ากับ {max}",
+    "rangeErrorMinMax": "ค่าต้องอยู่ระหว่าง {min} ถึง {max}",
     "noEmptyPortOnly": "หมายเลขพอร์ตไม่ถูกต้อง (0-65535)",
     "invalidIpFormat": "รูปแบบ IP แอดเดรสไม่ถูกต้อง",
     "invalidEmailFormat": "รูปแบบอีเมลไม่ถูกต้อง",
