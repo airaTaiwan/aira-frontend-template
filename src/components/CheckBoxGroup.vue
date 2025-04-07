@@ -1,27 +1,26 @@
-<script setup lang="ts">
-import { CFormCheck, CListGroup, CListGroupItem } from '@coreui/vue-pro'
-import { computed } from 'vue'
+<script setup lang="ts" generic="T extends string">
+import { CFormCheck, CFormLabel, CListGroup, CListGroupItem } from '@coreui/vue-pro'
 
-interface CheckBoxGroupOptions {
-  value: string
+interface CheckBoxGroupOptions<T = string> {
+  value: T
   label?: string
-  children?: CheckBoxGroupOptions[]
+  children?: CheckBoxGroupOptions<T>[]
 }
 
 defineProps<{
-  options?: CheckBoxGroupOptions[]
+  options?: CheckBoxGroupOptions<T>[]
 }>()
 
-const selected = defineModel<string[]>({ required: false, default: [] })
+const selected = defineModel<T[]>({ required: false, default: [] })
 
-const childrenIdsCache = new Map<string, string[]>()
+const childrenIdsCache = new Map<T, T[]>()
 
-function getAllChildrenIds(item: CheckBoxGroupOptions): string[] {
+function getAllChildrenIds(item: CheckBoxGroupOptions<T>): T[] {
   const cached = childrenIdsCache.get(item.value)
   if (cached)
     return cached
 
-  let ids: string[] = []
+  let ids: T[] = []
   if (item.children) {
     item.children.forEach((child) => {
       ids = [...ids, child.value, ...getAllChildrenIds(child)]
@@ -32,7 +31,7 @@ function getAllChildrenIds(item: CheckBoxGroupOptions): string[] {
   return ids
 }
 
-const getChildrenState = computed(() => (item: CheckBoxGroupOptions): boolean => {
+const getChildrenState = computed(() => (item: CheckBoxGroupOptions<T>): boolean => {
   if (!item.children?.length)
     return selected.value.includes(item.value)
 
@@ -40,7 +39,7 @@ const getChildrenState = computed(() => (item: CheckBoxGroupOptions): boolean =>
   return childrenIds.length > 0 && childrenIds.every(id => selected.value.includes(id))
 })
 
-function onSelectedChange(id: string, children: CheckBoxGroupOptions[] = []) {
+function onSelectedChange(id: T, children: CheckBoxGroupOptions<T>[] = []) {
   if (!children.length) {
     selected.value = selected.value.includes(id)
       ? selected.value.filter(v => v !== id)
@@ -50,7 +49,7 @@ function onSelectedChange(id: string, children: CheckBoxGroupOptions[] = []) {
 
   const childrenIds = children.reduce((acc, child) => {
     return [...acc, child.value, ...getAllChildrenIds(child)]
-  }, [] as string[])
+  }, [] as T[])
 
   const allSelected = childrenIds.every(id => selected.value.includes(id))
   selected.value = allSelected
@@ -62,13 +61,17 @@ function onSelectedChange(id: string, children: CheckBoxGroupOptions[] = []) {
 <template>
   <CListGroup>
     <CListGroupItem v-for="item in options" :key="item.value">
-      <CFormCheck
-        :id="item.value"
-        :label="item.label ?? item.value"
-        :model-value="getChildrenState(item)"
-        @change="onSelectedChange(item.value, item.children)"
-      />
-      <div v-if="item.children?.length" class="ms-4">
+      <div flex="~ items-center gap-x-2">
+        <CFormCheck
+          :id="item.value"
+          :model-value="getChildrenState(item)"
+          @change="onSelectedChange(item.value, item.children)"
+        />
+        <CFormLabel select-none :for="item.value">
+          {{ item.label ?? item.value }}
+        </CFormLabel>
+      </div>
+      <div v-if="item.children?.length" class="ms-2">
         <CheckBoxGroup
           v-model="selected"
           :options="item.children"
@@ -81,6 +84,8 @@ function onSelectedChange(id: string, children: CheckBoxGroupOptions[] = []) {
 <style scoped>
 * {
   --cui-list-group-bg: transparent;
-  --cui-list-group-item-padding-y: 0.25rem;
+  --cui-border-width: 0;
+  --cui-list-group-item-padding-x: 0;
+  --cui-list-group-item-padding-y: 0;
 }
 </style>
