@@ -2,10 +2,9 @@
   color: #ffffff;
   border-width: 0;
 
-  &:hover {
-    color: #ffffff;
-  }
-
+  &:hover,
+  &:focus,
+  &:focus-visible,
   &:active {
     color: #ffffff !important;
   }

@@ -1,8 +1,15 @@
 @import './font-awesome/font-awesome.css';
 @import './vxe-table/vxe-table.css';
 
-html.dark {
-  --cui-body-color: rgba(255, 255, 255, 0.8);
+html,
+body,
+#app {
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+  margin: 0;
+  padding: 0;
+  --uno: scrollbar-none;
 }
 
 /* fallback to vh if dvh is not supported */
@@ -10,6 +17,26 @@ html.dark {
   width: 100vw;
   height: 100vh;
   height: 100dvh;
+}
+
+html.dark {
+  --cui-body-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Override CoreUI Modal */
+.modal-backdrop {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+.modal-fullscreen {
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  margin: 0;
 }
 
 .fade-enter-active,
