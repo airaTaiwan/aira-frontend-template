@@ -1,4 +1,4 @@
-<script setup lang="ts" generic="T = { uuid: string }">
+<script setup lang="ts" generic="T extends { uuid: string }">
 import type {
   VxeGridProps,
   VxeGridPropTypes,
@@ -50,13 +50,20 @@ const defaultGridTableConfig: VxeGridProps = {
   border: true,
   autoResize: true,
   align: 'center',
-  height: 'auto',
+  height: '100%',
   showOverflow: 'tooltip',
+  virtualYConfig: {
+    enabled: true,
+    gt: 0,
+  },
   scrollY: {
     enabled: false,
   },
   columnConfig: {
     useKey: true,
+  },
+  cellConfig: {
+    height: 60,
   },
   rowConfig: {
     useKey: true,

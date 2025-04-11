@@ -70,11 +70,6 @@ async function removeSelectItem() {
 <template>
   <Table
     ref="tableRef"
-    :table-config="{
-      rowConfig: {
-        height: 80,
-      },
-    }"
     :table-toolbar-config="{
       slots: {
         tools: 'toolbar_tools',
