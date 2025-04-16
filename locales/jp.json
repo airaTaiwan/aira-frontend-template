@@ -25,7 +25,10 @@
     "name": "ค้นหาชื่อ"
   },
   "header": {
-    "today": "今日は"
+    "today": "今日"
+  },
+  "role": {
+    "admin": "管理者"
   },
   "time": {
     "year": "年",
