@@ -41,9 +41,9 @@
   },
   "modal": {
     "delete": {
-      "title": "Delete Confirmation",
-      "confirm": "Are you sure you want to delete?",
-      "prompt": "Message Prompt"
+      "title": "刪除確認",
+      "confirm": "您確定要刪除嗎？",
+      "prompt": "訊息提示"
     }
   },
   "validation": {
