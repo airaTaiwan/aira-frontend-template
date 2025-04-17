@@ -22,7 +22,7 @@ const currentTime = computed(() => format(now.value, 'HH:mm:ss'))
     </RouterLink>
     <div h-full flex="~ items-center" gap-x-4>
       <div text="xl">
-        Admin
+        {{ t('role.admin') }}
       </div>
       <div bg="[#8A9192]" h-full w-px />
       <div h-full flex="~ col items-end justify-between" text-sm>

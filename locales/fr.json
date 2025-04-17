@@ -27,6 +27,9 @@
   "header": {
     "today": "Aujourd'hui"
   },
+  "role": {
+    "admin": "Admin"
+  },
   "time": {
     "year": "Année",
     "month": "Mois",

@@ -25,7 +25,10 @@
     "name": "搜尋名稱"
   },
   "header": {
-    "today": "今天"
+    "today": "今日"
+  },
+  "role": {
+    "admin": "管理員"
   },
   "time": {
     "year": "年",

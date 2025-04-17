@@ -11,7 +11,7 @@
     "preview": "vite preview",
     "release": "bumpp --commit --tag --push",
     "typecheck": "vue-tsc --noEmit",
-    "lint": "eslint 'src/**/*.{ts,vue}'",
+    "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "up": "taze major -I"
   },
@@ -40,6 +40,7 @@
     "@coreui/vue-pro": "^5.10.0",
     "@iconify-json/carbon": "^1.2.8",
     "@iconify-json/cil": "^1.2.2",
+    "@intlify/eslint-plugin-vue-i18n": "^4.0.1",
     "@intlify/unplugin-vue-i18n": "^6.0.5",
     "@types/archiver": "^6.0.3",
     "@types/node": "^22.14.1",
