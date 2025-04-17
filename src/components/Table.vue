@@ -192,9 +192,10 @@ defineExpose({
     @radio-change="radioChangeEvent"
     @page-change="handlePageChange"
   >
+    <!-- Reference: https://github.com/vuejs/language-tools/issues/329#issuecomment-1022070487 -->
     <template
-      v-for="(value, key) in tableToolbarConfig?.slots"
-      :key="key"
+      v-for="(value, _key) in tableToolbarConfig?.slots"
+      :key="_key"
       #[value!.toString()]="props"
     >
       <slot :name="value" :props />
