@@ -28,7 +28,12 @@ Object.values(import.meta.glob<{ install: UserModule }>('./plugin/*.ts', { eager
   })
 
 app
-  .use(createPinia())
-  .use(PiniaColada, {})
   .use(router)
+  .use(createPinia())
+  .use(PiniaColada, {
+    queryOptions: {
+      placeholderData: previousData => previousData,
+      staleTime: Number.POSITIVE_INFINITY,
+    },
+  })
 app.mount('#app')
