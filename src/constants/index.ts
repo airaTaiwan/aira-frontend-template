@@ -1,6 +1,7 @@
 import packageJson from '../../package.json'
 
 export const WhitePageRegexp = /manage|login/
+export const AutoScaleRegexp = /manage/
 
 export const stepProgressParams = Object.freeze({
   param_cardStyle: 'height: 35rem;',

@@ -6,6 +6,7 @@
 // biome-ignore lint: disable
 export {}
 declare global {
+  const AutoScaleRegexp: typeof import('./src/constants/index')['AutoScaleRegexp']
   const EffectScope: typeof import('vue')['EffectScope']
   const WhitePageRegexp: typeof import('./src/constants/index')['WhitePageRegexp']
   const asyncComputed: typeof import('@vueuse/core')['asyncComputed']
@@ -329,6 +330,7 @@ import { UnwrapRef } from 'vue'
 declare module 'vue' {
   interface GlobalComponents {}
   interface ComponentCustomProperties {
+    readonly AutoScaleRegexp: UnwrapRef<typeof import('./src/constants/index')['AutoScaleRegexp']>
     readonly EffectScope: UnwrapRef<typeof import('vue')['EffectScope']>
     readonly WhitePageRegexp: UnwrapRef<typeof import('./src/constants/index')['WhitePageRegexp']>
     readonly asyncComputed: UnwrapRef<typeof import('@vueuse/core')['asyncComputed']>
