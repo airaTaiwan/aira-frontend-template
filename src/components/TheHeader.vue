@@ -13,7 +13,7 @@ const currentTime = computed(() => format(now.value, 'HH:mm:ss'))
   <div
     relative
     flex="~ items-center justify-between" h-16 w-full bg-white p-4 text-accent
-    dark="bg-head-1 text-[#B4BFC0]"
+    dark="bg-head text-hex-b4bfc0"
   >
     <RouterLink v-slot="{ navigate }" to="/" custom>
       <button bg-transparent type="button" @click="navigate">

@@ -24,6 +24,7 @@ export default defineConfig({
     colors: {
       primary: '#6CBBFF',
       accent: '#7A7A7A',
+      head: '#1E1E1E',
     },
   },
   rules: [
