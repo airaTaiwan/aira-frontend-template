@@ -15,7 +15,15 @@ export interface Navitem {
 const route = useRoute()
 const router = useRouter()
 
-const manageNavs = computed<Navitem[]>(() => [])
+const { t } = useI18n()
+
+const manageNavs = computed<Navitem[]>(() => [
+  {
+    name: t('logout'),
+    component: CNavItem,
+    to: '/logout',
+  },
+])
 
 const reportNavs = computed<Navitem[]>(() => [])
 

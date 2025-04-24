@@ -27,6 +27,16 @@
   "header": {
     "today": "Aujourd'hui"
   },
+  "login": {
+    "title": "Connexion",
+    "subTitle": "Connectez-vous à votre compte",
+    "rememberMe": "Se souvenir de moi",
+    "loginButton": "Se connecter",
+    "usernamePlaceholder": "Nom d'utilisateur",
+    "passwordPlaceholder": "Mot de passe",
+    "version": "Numéro de version"
+  },
+  "logout": "Déconnexion",
   "role": {
     "admin": "Admin"
   },

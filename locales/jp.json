@@ -27,6 +27,16 @@
   "header": {
     "today": "今日"
   },
+  "login": {
+    "title": "ログイン",
+    "subTitle": "ログインしてください",
+    "rememberMe": "ログイン情報を記憶する",
+    "loginButton": "ログイン",
+    "usernamePlaceholder": "ユーザー名",
+    "passwordPlaceholder": "パスワード",
+    "version": "バージョン番号"
+  },
+  "logout": "ログアウト",
   "role": {
     "admin": "管理者"
   },

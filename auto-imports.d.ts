@@ -9,6 +9,9 @@ declare global {
   const AutoScaleRegexp: typeof import('./src/constants/index')['AutoScaleRegexp']
   const EffectScope: typeof import('vue')['EffectScope']
   const WhitePageRegexp: typeof import('./src/constants/index')['WhitePageRegexp']
+  const apiGenerateToken: typeof import('./src/api/user')['apiGenerateToken']
+  const apiRefreshToken: typeof import('./src/api/user')['apiRefreshToken']
+  const apiResetPassword: typeof import('./src/api/user')['apiResetPassword']
   const asyncComputed: typeof import('@vueuse/core')['asyncComputed']
   const autoResetRef: typeof import('@vueuse/core')['autoResetRef']
   const checkConfirmPassword: typeof import('./src/utils/validation')['checkConfirmPassword']
@@ -333,6 +336,9 @@ declare module 'vue' {
     readonly AutoScaleRegexp: UnwrapRef<typeof import('./src/constants/index')['AutoScaleRegexp']>
     readonly EffectScope: UnwrapRef<typeof import('vue')['EffectScope']>
     readonly WhitePageRegexp: UnwrapRef<typeof import('./src/constants/index')['WhitePageRegexp']>
+    readonly apiGenerateToken: UnwrapRef<typeof import('./src/api/user')['apiGenerateToken']>
+    readonly apiRefreshToken: UnwrapRef<typeof import('./src/api/user')['apiRefreshToken']>
+    readonly apiResetPassword: UnwrapRef<typeof import('./src/api/user')['apiResetPassword']>
     readonly asyncComputed: UnwrapRef<typeof import('@vueuse/core')['asyncComputed']>
     readonly autoResetRef: UnwrapRef<typeof import('@vueuse/core')['autoResetRef']>
     readonly checkConfirmPassword: UnwrapRef<typeof import('./src/utils/validation')['checkConfirmPassword']>

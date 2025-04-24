@@ -27,6 +27,16 @@
   "header": {
     "today": "Today"
   },
+  "login": {
+    "title": "Login",
+    "subTitle": "Login to your account",
+    "rememberMe": "Remember Me",
+    "loginButton": "Login",
+    "usernamePlaceholder": "Username",
+    "passwordPlaceholder": "Password",
+    "version": "Version Number"
+  },
+  "logout": "Logout",
   "role": {
     "admin": "Admin"
   },

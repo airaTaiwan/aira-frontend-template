@@ -3,23 +3,20 @@ defineOptions({
   name: 'IndexPage',
 })
 
-const value = ref<string[]>([])
+const user = useUserStore()
 </script>
 
 <template>
   <div h="[calc(100%-4rem)]" w-full p-4 class="grid-container">
     <!-- Main -->
     <div class="main">
-      {{ frontEndVersion }}
-      <DatePicker />
-      <MultiSelect
-        v-model="value"
-        :max="10"
-        :options="[{
-          value: '123',
-          label: '123',
-        }]"
-      />
+      <p mb-2>
+        Frontend Version: {{ frontEndVersion }}
+      </p>
+
+      <AsyncButton type="button" @click="user.refreshtoken">
+        Maintain Token
+      </AsyncButton>
     </div>
   </div>
 </template>

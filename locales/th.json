@@ -27,6 +27,16 @@
   "header": {
     "today": "วันนี้"
   },
+  "login": {
+    "title": "เข้าสู่ระบบ",
+    "subTitle": "เข้าสู่ระบบของคุณ",
+    "rememberMe": "จดจำฉัน",
+    "loginButton": "เข้าสู่ระบบ",
+    "usernamePlaceholder": "ชือผู้ใช้",
+    "passwordPlaceholder": "รหัสผ่าน",
+    "version": "หมายเลขเวอร์ชัน"
+  },
+  "logout": "ออกจากระบบ",
   "role": {
     "admin": "แอดมิน"
   },

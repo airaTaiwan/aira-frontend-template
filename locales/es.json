@@ -27,6 +27,16 @@
   "header": {
     "today": "Hoy"
   },
+  "login": {
+    "title": "Iniciar sesión",
+    "subTitle": "Inicie sesión en su cuenta",
+    "rememberMe": "Recordarme",
+    "loginButton": "Iniciar sesión",
+    "usernamePlaceholder": "Nombre de usuario",
+    "passwordPlaceholder": "Contraseña",
+    "version": "Número de versión"
+  },
+  "logout": "Cerrar sesión",
   "role": {
     "admin": "Administrador"
   },
