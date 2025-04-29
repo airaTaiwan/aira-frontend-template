@@ -1,0 +1,2 @@
+patchedDependencies:
+  '@coreui/coreui-pro': patches/@coreui__coreui-pro.patch

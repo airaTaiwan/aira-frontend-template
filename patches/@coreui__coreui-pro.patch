@@ -1,0 +1,145 @@
+diff --git a/scss/_variables-dark.scss b/scss/_variables-dark.scss
+index 2c2f31c221f581c979dcb214c15599f11075db37..9f374a983040f148ff3bdebc1ea4b4c78d3ce463 100644
+--- a/scss/_variables-dark.scss
++++ b/scss/_variables-dark.scss
+@@ -58,7 +58,7 @@ $dark-dark:          $dark !default;
+ 
+ // scss-docs-start theme-colors-dark-map
+ $theme-colors-dark: (
+-  "primary":    $primary-dark,
++  "primary":    $info-dark,
+   "secondary":  $secondary-dark,
+   "success":    $success-dark,
+   "info":       $info-dark,
+@@ -146,7 +146,7 @@ $info-gradient-dark: (
+ ) !default;
+ 
+ $theme-gradients-dark: (
+-  "primary":    $primary-gradient-dark,
++  "primary":    $info-gradient-dark,
+   "secondary":  $secondary-gradient-dark,
+   "success":    $success-gradient-dark,
+   "info":       $info-gradient-dark,
+@@ -167,7 +167,7 @@ $body-emphasis-color-dark:          $white !default;
+ $border-color-dark:                 $gray-800-dark !default;
+ $border-color-translucent-dark:     rgba($white, .1) !default;
+ $headings-color-dark:               inherit !default;
+-$link-color-dark:                   $primary-dark !default;
++$link-color-dark:                   $info-dark !default;
+ $link-hover-color-dark:             shift-color($link-color-dark, -$link-shade-percentage) !default;
+ $code-color-dark:                   tint-color($code-color, 40%) !default;
+ $mark-color-dark:                   $body-color-dark !default;
+@@ -198,7 +198,7 @@ $form-invalid-border-color-dark:    $red-300 !default;
+ //
+ 
+ $accordion-icon-color-dark:         $body-color-dark !default;
+-$accordion-icon-active-color-dark:  $primary-text-emphasis-dark !default;
++$accordion-icon-active-color-dark:  $info-text-emphasis-dark !default;
+ 
+ $accordion-button-icon-dark:         url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-color-dark}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708'/></svg>") !default;
+ $accordion-button-active-icon-dark:  url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-active-color-dark}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708'/></svg>") !default;
+diff --git a/scss/_variables.scss b/scss/_variables.scss
+index 3fc9f953e2dfb894cf0a943d829c853121641500..2667637cf7c2917731871bf9824e5a9be887b428 100644
+--- a/scss/_variables.scss
++++ b/scss/_variables.scss
+@@ -331,7 +331,7 @@ $dark:          $gray-900 !default;
+ 
+ // scss-docs-start theme-colors-map
+ $theme-colors: (
+-  "primary":    $primary,
++  "primary":    $info,
+   "secondary":  $secondary,
+   "success":    $success,
+   "info":       $info,
+@@ -419,7 +419,7 @@ $info-gradient: (
+ ) !default;
+ 
+ $theme-gradients: (
+-  "primary":    $primary-gradient,
++  "primary":    $info-gradient,
+   "secondary":  $secondary-gradient,
+   "success":    $success-gradient,
+   "info":       $info-gradient,
+@@ -552,7 +552,7 @@ $body-emphasis-color:       $black !default;
+ //
+ // Style anchor elements.
+ 
+-$link-color:                              $primary !default;
++$link-color:                              $info !default;
+ $link-decoration:                         underline !default;
+ $link-shade-percentage:                   20% !default;
+ $link-hover-color:                        shift-color($link-color, $link-shade-percentage) !default;
+@@ -684,7 +684,7 @@ $component-active-bg:         var(--#{$prefix}primary) !default;
+ // scss-docs-start focus-ring-variables
+ $focus-ring-width:      .25rem !default;
+ $focus-ring-opacity:    .25 !default;
+-$focus-ring-color:      rgba($primary, $focus-ring-opacity) !default;
++$focus-ring-color:      rgba($info, $focus-ring-opacity) !default;
+ $focus-ring-blur:       0 !default;
+ $focus-ring-box-shadow: 0 0 $focus-ring-blur $focus-ring-width $focus-ring-color !default;
+ // scss-docs-end focus-ring-variables
+@@ -892,7 +892,7 @@ $table-bg-scale:              -80% !default;
+ 
+ // scss-docs-start table-loop
+ $table-variants: (
+-  "primary":    shift-color($primary, $table-bg-scale),
++  "primary":    shift-color($info, $table-bg-scale),
+   "secondary":  shift-color($secondary, $table-bg-scale),
+   "success":    shift-color($success, $table-bg-scale),
+   "info":       shift-color($info, $table-bg-scale),
+@@ -1035,7 +1035,7 @@ $input-border-radius-sm:                var(--#{$prefix}border-radius-sm) !defau
+ $input-border-radius-lg:                var(--#{$prefix}border-radius-lg) !default;
+ 
+ $input-focus-bg:                        $input-bg !default;
+-$input-focus-border-color:              tint-color($primary, 50%) !default;
++$input-focus-border-color:              tint-color($info, 50%) !default;
+ $input-focus-color:                     $input-color !default;
+ $input-focus-width:                     $input-btn-focus-width !default;
+ $input-focus-box-shadow:                $input-btn-focus-box-shadow !default;
+@@ -1204,7 +1204,7 @@ $form-range-thumb-border-radius:           1rem !default;
+ $form-range-thumb-box-shadow:              0 .1rem .25rem rgba($black, .1) !default;
+ $form-range-thumb-focus-box-shadow:        0 0 0 1px $body-bg, $input-focus-box-shadow !default;
+ $form-range-thumb-focus-box-shadow-width:  $input-focus-width !default; // For focus box shadow issue in Edge
+-$form-range-thumb-active-bg:               tint-color($primary, 70%) !default;
++$form-range-thumb-active-bg:               tint-color($info, 70%) !default;
+ $form-range-thumb-disabled-bg:             var(--#{$prefix}secondary-color) !default;
+ $form-range-thumb-transition:              background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
+ // scss-docs-end form-range-variables
+@@ -1539,8 +1539,8 @@ $accordion-button-padding-x:              $accordion-padding-x !default;
+ $accordion-button-color:                  var(--#{$prefix}body-color) !default;
+ $accordion-button-bg:                     var(--#{$prefix}accordion-bg) !default;
+ $accordion-transition:                    $btn-transition, border-radius .15s ease !default;
+-$accordion-button-active-bg:              var(--#{$prefix}primary-bg-subtle) !default;
+-$accordion-button-active-color:           var(--#{$prefix}primary-text-emphasis) !default;
++$accordion-button-active-bg:              var(--#{$prefix}info-bg-subtle) !default;
++$accordion-button-active-color:           var(--#{$prefix}info-text-emphasis) !default;
+ 
+ // fusv-disable
+ $accordion-button-focus-border-color:     $input-focus-border-color !default; // Deprecated in v5.0.0
+@@ -1549,7 +1549,7 @@ $accordion-button-focus-box-shadow:       $btn-focus-box-shadow !default;
+ 
+ $accordion-icon-width:                    1.25rem !default;
+ $accordion-icon-color:                    $body-color !default;
+-$accordion-icon-active-color:             $primary-text-emphasis !default;
++$accordion-icon-active-color:             $info-text-emphasis !default;
+ $accordion-icon-transition:               transform .2s ease-in-out !default;
+ $accordion-icon-transform:                rotate(-180deg) !default;
+ 
+@@ -1789,7 +1789,7 @@ $callout-border-color:              var(--#{$prefix}border-color) !default;
+ $callout-border-left-width:         calc(#{$callout-border-width} * 4) !default; // stylelint-disable-line function-disallowed-list
+ 
+ $callout-variants: (
+-  "primary":    $primary,
++  "primary":    $info,
+   "secondary":  $secondary,
+   "success":    $success,
+   "danger":     $danger,
+@@ -2560,7 +2560,7 @@ $range-slider-thumb-border:                0 !default;
+ $range-slider-thumb-border-radius:         1rem !default;
+ $range-slider-thumb-box-shadow:            0 .1rem .25rem rgba($black, .1) !default;
+ $range-slider-thumb-focus-box-shadow:      0 0 0 1px $body-bg, $input-focus-box-shadow !default;
+-$range-slider-thumb-active-bg:             tint-color($primary, 70%) !default;
++$range-slider-thumb-active-bg:             tint-color($info, 70%) !default;
+ $range-slider-thumb-disabled-bg:           rgba(var(--#{$prefix}secondary-rgb), 1) !default;
+ $range-slider-thumb-transition:            background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
+ 

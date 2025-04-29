@@ -14,6 +14,10 @@ export default defineConfig({
     {
       'color-base': 'dark:text-#ffffff text-#222222',
 
+      'bg-ctrl-primary': 'bg-[linear-gradient(180deg,#4FADDF_0%,#3186B4_44.79%,#2475A0_47.4%,#3186B4_100%)]',
+      'bg-ctrl-primary-hover':
+        '@hover:bg-[radial-gradient(50%_31.25%_at_50%_100%,_rgba(255,255,255,0.50)_0%,_rgba(255,255,255,0.00)_100%),linear-gradient(180deg,#4FADDF_0%,#3186B4_44.79%,#2475A0_47.4%,#3186B4_100%)]',
+
       'scroll-bar': 'scrollbar-thumb-color-[#808080] scrollbar-track-color-transparent scrollbar-thumb-radius-4 scrollbar-track-radius-4',
 
       // ref: https://github.com/unocss/unocss/issues/2614
