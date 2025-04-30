@@ -29,6 +29,7 @@
   },
   "login": {
     "title": "Iniciar sesión",
+    "failed": "Inicio de sesión fallido",
     "subTitle": "Inicie sesión en su cuenta",
     "rememberMe": "Recordarme",
     "loginButton": "Iniciar sesión",

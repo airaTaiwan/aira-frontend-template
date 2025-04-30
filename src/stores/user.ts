@@ -3,11 +3,13 @@ import { useCookies } from '@vueuse/integrations/useCookies'
 import { useJwt } from '@vueuse/integrations/useJwt'
 import { acceptHMRUpdate, defineStore } from 'pinia'
 import { useRouter } from 'vue-router'
+import { toast } from 'vue-sonner'
 import { UserPermission } from '~/types/user'
 
 export const useUserStore = defineStore('user', () => {
   const router = useRouter()
   const cookies = useCookies()
+  const { t } = useI18n()
 
   const { resume, pause } = useIntervalFn(() => {
     refreshtoken()
@@ -46,6 +48,7 @@ export const useUserStore = defineStore('user', () => {
       resume()
     }
     catch {
+      toast.error(t('login.failed'))
       isLogin.value = false
       return false
     }
@@ -92,6 +95,7 @@ export const useUserStore = defineStore('user', () => {
       cookies.set('token', token, { expires: expireDate })
     }
     catch {
+      toast.error(t('login.failed'))
       logout()
     }
   }

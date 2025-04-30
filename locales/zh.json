@@ -29,6 +29,7 @@
   },
   "login": {
     "title": "登入",
+    "failed": "登入失敗",
     "subTitle": "登入您的使用者帳號",
     "rememberMe": "記住我",
     "loginButton": "登入",

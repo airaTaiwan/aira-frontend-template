@@ -29,6 +29,7 @@
   },
   "login": {
     "title": "ログイン",
+    "failed": "ログイン失敗",
     "subTitle": "ログインしてください",
     "rememberMe": "ログイン情報を記憶する",
     "loginButton": "ログイン",

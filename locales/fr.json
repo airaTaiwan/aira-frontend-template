@@ -29,6 +29,7 @@
   },
   "login": {
     "title": "Connexion",
+    "failed": "Échec de la connexion",
     "subTitle": "Connectez-vous à votre compte",
     "rememberMe": "Se souvenir de moi",
     "loginButton": "Se connecter",
