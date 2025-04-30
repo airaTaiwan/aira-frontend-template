@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import VScaleScreen from 'v-scale-screen'
 import { Toaster } from 'vue-sonner'
+import { VxeUI } from 'vxe-pc-ui'
 
 const route = useRoute()
 
@@ -9,10 +10,12 @@ const isNotAutoScale = computed(() => AutoScaleRegexp.test(route.path))
 watchEffect(() => {
   if (WhitePageRegexp.test(route.path)) {
     toggleDark(false)
+    VxeUI.setTheme('light')
     document.documentElement.setAttribute('data-coreui-theme', 'light')
   }
   else {
     toggleDark(true)
+    VxeUI.setTheme('dark')
     document.documentElement.setAttribute('data-coreui-theme', 'dark')
   }
 })
