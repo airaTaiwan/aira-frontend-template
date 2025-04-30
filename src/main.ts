@@ -13,6 +13,7 @@ import './styles/main.css'
 import '@unocss/reset/tailwind-compat.css'
 import 'uno.css'
 import 'vue-step-progress/dist/main.css'
+import 'floating-vue/dist/style.css'
 import '@vuepic/vue-datepicker/dist/main.css'
 import '@vueform/multiselect/themes/default.css'
 
