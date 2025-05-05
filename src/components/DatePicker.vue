@@ -3,8 +3,7 @@ import type { VueDatePickerProps } from '@vuepic/vue-datepicker'
 import type { ComponentExposed } from 'vue-component-type-helpers'
 import VueDatePicker from '@vuepic/vue-datepicker'
 
-interface DatePickerProps extends /* @vue-ignore */ VueDatePickerProps {}
-const props = defineProps<Partial<DatePickerProps>>()
+const props = defineProps<VueDatePickerProps>()
 
 const { locale } = useI18n()
 

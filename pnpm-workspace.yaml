@@ -1,2 +1,3 @@
 patchedDependencies:
   '@coreui/coreui-pro': patches/@coreui__coreui-pro.patch
+  '@vue.ts/complex-types': patches/@vue.ts__complex-types.patch

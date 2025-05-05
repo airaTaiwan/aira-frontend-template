@@ -19,8 +19,8 @@ export default defineConfig({
     },
   },
   plugins: [
-    Vue(),
     VueComplexTypes(),
+    Vue(),
 
     // https://github.com/posva/unplugin-vue-router
     VueRouter(),
